@@ -204,9 +204,9 @@ class addressWriter:
 
                 # set even or odd numbers to zero if not defined
                 if not "oddNumbers" in locals():
-                    oddNumbers = 0
+                    oddNumbers = False
                 if not "evenNumbers" in locals():
-                    evenNumbers = 0
+                    evenNumbers = False
 
                 # check if there's a hyphen in position 26 - then its a range of numbers
                 if line[25] == "-":
@@ -253,7 +253,6 @@ class addressWriter:
             ["ID", "Vejnavn", "Sogn", "Postdistrikt", "By", "Flække"]
         )
         for street in self.streets:
-            print(street)
             self.streetWriter.writerow(
                 [
                     street.streetId,
@@ -264,9 +263,38 @@ class addressWriter:
                     street.district,
                 ]
             )
+        logging.info("wrote " + str(len(self.streets)) + " streets to file")
 
     def writeStreetExceptions(self) -> any:
-        exit
+        self.exceptionWriter.writerow(
+            [
+                "ID",
+                "Undtagelse type",
+                "Værdi til undtagelse",
+                "Lige numre",
+                "Ulige numre",
+                "FraHusNummer",
+                "FraHusNummerBogstav",
+                "TilHusNummer",
+                "TilHusNummerBogstav",
+            ]
+        )
+        for exception in self.streetExceptions:
+            print(exception)
+            self.exceptionWriter.writerow(
+                [
+                    exception.streetId,
+                    exception.exceptionType,
+                    exception.exceptionValue,
+                    exception.evenNumbers,
+                    exception.oddNumbers,
+                    exception.exceptionFrom,
+                    exception.exceptionFromSuffix,
+                    exception.exceptionTo,
+                    exception.exceptionToSuffix,
+                ]
+            )
+        logging.info("wrote " + str(len(self.streetExceptions)) + " exceptions to file")
 
 
 logging.basicConfig(
@@ -321,3 +349,4 @@ convert.parseStreets()
 convert.parsePersons()
 
 convert.writeStreetFile()
+convert.writeStreetExceptions()
