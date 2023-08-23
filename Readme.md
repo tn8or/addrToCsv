@@ -1,5 +1,5 @@
-#util for converting a danish address extract into csv format; pretty internal stuff
-##The address extract is from KMD, as an extract from the address registry. This is just for sanitizing the output a bit, to use it more programmatically
+# util for converting a danish address extract into csv format; pretty internal stuff
+## The address extract is from KMD, as an extract from the address registry. This is just for sanitizing the output a bit, to use it more programmatically
 
 
 Input file could look like this - a sequence of control codes describing the street, and then residents on said street.
