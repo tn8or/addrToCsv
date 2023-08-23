@@ -49,6 +49,7 @@ occupation (opt) = char 99:114
 c/o = char:115-150
 
 07 0258 001 a                      Lastna                    Firstna
+07 0258 005   st   th              Examplelas                Andthefirstname
 07 0258 012                        Lastname1                 Firstn          Middlen    S                         c/o Care Of Address
 07 0258 011                        Surname                   First           Midd                  Occupation
 ```

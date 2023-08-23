@@ -11,6 +11,11 @@ class street:
     town: str = None
     district: str = None
 
+    def __eq__(self, other):
+        if other == self.streetId:
+            return True
+        return False
+
 
 @dataclass
 class streetexception:
@@ -23,6 +28,11 @@ class streetexception:
     exceptionFromSuffix: str = None
     exceptionTo: int = None
     exceptionToSuffix: str = None
+
+    def __eq__(self, other):
+        if other == self.streetId:
+            return True
+        return False
 
 
 @dataclass
@@ -101,9 +111,6 @@ def parseStreets(Lines: list) -> any:
     count = 0
     global streets
     for line in Lines:
-        # for now, just stop after 4 streets
-        if count > 4:
-            break
         fields = line.split()
         match fields[0]:
             case "00":
@@ -236,6 +243,22 @@ def parseLineforExceptions(
             return value
 
 
+def writeStreetFile(streets: list, streetWriter: any, exceptionWriter: any) -> any:
+    streetWriter.writerow(["ID", "Vejnavn", "Sogn", "Postdistrikt", "By", "Flække"])
+    for street in streets:
+        print(street)
+        streetWriter.writerow(
+            [
+                street.streetId,
+                street.streetName,
+                street.parish,
+                street.postCode,
+                street.town,
+                street.district,
+            ]
+        )
+
+
 logging.basicConfig(
     format="%(asctime)s %(levelname)-8s %(message)s",
     level=logging.INFO,
@@ -246,9 +269,21 @@ parser = argparse.ArgumentParser(
     prog="extract persons and streets from KMD .txt extract, for phonebook",
     description="Will extract persons and streets from the KMD mainframe extract, and store as csv files, for further phonebook formatting",
 )
-parser.add_argument("-i", "--input", help="Input filename. The KMD .txt file")
-parser.add_argument("-p", "--person", help="CSV file for outputting the person data")
-parser.add_argument("-s", "--street", help="CSV file for storing street names")
+parser.add_argument(
+    "-i", "--input", help="Input filename. The KMD .txt file", required=True
+)
+parser.add_argument(
+    "-p", "--person", help="CSV file for outputting the person data", required=True
+)
+parser.add_argument(
+    "-s", "--street", help="CSV file for storing street names", required=True
+)
+parser.add_argument(
+    "-e",
+    "--exceptions",
+    help="CSV file for storing street exceptions (parish, town, etc)",
+    required=True,
+)
 
 args = parser.parse_args()
 
@@ -257,6 +292,8 @@ try:
         logging.info("Will read file " + args.input)
         logging.info("Will write persons to file " + args.person)
         logging.info("Will write streets to file " + args.street)
+        logging.info("Will write exceptions to file " + args.exceptions)
+
 
 except:
     logging.critical(
@@ -267,11 +304,18 @@ except:
 
 inputfile = open(args.input, "r", encoding="ISO-8859-1")
 personfile = open(args.person, "w", newline="")
-personwriter = csv.writer(personfile)
-streetfile = open(args.person, "w", newline="")
-streetriter = csv.writer(streetfile)
+personWriter = csv.writer(personfile, dialect="excel")
+streetfile = open(args.street, "w", newline="")
+streetWriter = csv.writer(streetfile, dialect="excel")
+exceptionfile = open(args.street, "w", newline="")
+exceptionWriter = csv.writer(streetfile, dialect="excel")
+
 
 Lines = inputfile.readlines()
 
 parseStreets(Lines)
 parsePersons(Lines)
+
+writeStreetFile(
+    streets=streets, streetWriter=streetWriter, exceptionWriter=exceptionWriter
+)
