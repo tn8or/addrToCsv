@@ -3,7 +3,7 @@
 
 
 Input file could look like this - a sequence of control codes describing the street, and then residents on said street.
-'''
+```
 Column descriptions:
 Column 0 variants:
     00: Street name
@@ -51,4 +51,4 @@ c/o = char:115-150
 07 0258 001 a                      Lastna                    Firstna
 07 0258 012                        Lastname1                 Firstn          Middlen    S                         c/o Care Of Address
 07 0258 011                        Surname                   First           Midd                  Occupation
-'''
+```
