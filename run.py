@@ -49,19 +49,13 @@ class person:
 
 
 class addressWriter:
-    streets = []
-    streetExceptions = []
-    persons = []
-
-    def __init__(self, args):
-        inputfile = open(args.input, "r", encoding="ISO-8859-1")
+    def __init__(self, input):
+        logging.info("will read file: " + input)
+        inputfile = open(input, "r", encoding="ISO-8859-1")
         self.lines = inputfile.readlines()
-        personfile = open(args.person, "w", newline="")
-        self.personWriter = csv.writer(personfile, dialect="excel")
-        streetfile = open(args.street, "w", newline="")
-        self.streetWriter = csv.writer(streetfile, dialect="excel")
-        exceptionfile = open(args.exceptions, "w", newline="")
-        self.exceptionWriter = csv.writer(exceptionfile, dialect="excel")
+        self.streets = []
+        self.streetExceptions = []
+        self.persons = []
 
     def parsePersons(self):
         for line in self.lines:
@@ -248,7 +242,12 @@ class addressWriter:
                 logging.debug("No exception, return the value " + value)
                 return value
 
-    def writeStreetFile(self) -> any:
+    def writeStreetFile(self, file) -> any:
+        streetfile = open(file, "w", newline="")
+        self.streetWriter = csv.writer(streetfile, dialect="excel")
+
+        if len(self.streets) == 0:
+            self.parseStreets()
         self.streetWriter.writerow(
             ["ID", "Vejnavn", "Sogn", "Postdistrikt", "By", "Flække"]
         )
@@ -265,7 +264,13 @@ class addressWriter:
             )
         logging.info("wrote " + str(len(self.streets)) + " streets to file")
 
-    def writeStreetExceptions(self) -> any:
+    def writeStreetExceptions(self, file) -> any:
+        exceptionfile = open(file, "w", newline="")
+        self.exceptionWriter = csv.writer(exceptionfile, dialect="excel")
+
+        if len(self.streetExceptions) == 0:
+            self.parseStreets()
+
         self.exceptionWriter.writerow(
             [
                 "ID",
@@ -296,6 +301,12 @@ class addressWriter:
             )
         logging.info("wrote " + str(len(self.streetExceptions)) + " exceptions to file")
 
+    def writePersonsCsv(self, file) -> any:
+        personfile = open(file, "w", newline="")
+        self.personWriter = csv.writer(personfile, dialect="excel")
+        if len(self.persons) == 0:
+            self.parsePersons()
+
 
 logging.basicConfig(
     format="%(asctime)s %(levelname)-8s %(message)s",
@@ -304,34 +315,33 @@ logging.basicConfig(
 )
 
 parser = argparse.ArgumentParser(
-    prog="extract persons and streets from KMD .txt extract, for phonebook",
+    prog="run.py",
+    usage="The -i flag is required (input file). At least one output option is required as well.",
     description="Will extract persons and streets from the KMD mainframe extract, and store as csv files, for further phonebook formatting",
+    add_help=True,
 )
-parser.add_argument(
+inputs = parser.add_argument_group("Input arguments", "Required for operation")
+
+inputs.add_argument(
     "-i", "--input", help="Input filename. The KMD .txt file", required=True
 )
-parser.add_argument(
-    "-p", "--person", help="CSV file for outputting the person data", required=True
+
+outputs = parser.add_argument_group(
+    "Output arguments", "Specify at least one, or you're not getting any output :-)"
 )
-parser.add_argument(
-    "-s", "--street", help="CSV file for storing street names", required=True
-)
-parser.add_argument(
+outputs.add_argument("-p", "--person", help="CSV file for outputting the person data")
+outputs.add_argument("-s", "--street", help="CSV file for storing street names")
+outputs.add_argument(
     "-e",
     "--exceptions",
     help="CSV file for storing street exceptions (parish, town, etc)",
-    required=True,
 )
 
 args = parser.parse_args()
 
 try:
     if os.path.isfile(args.input):
-        logging.info("Will read file " + args.input)
-        logging.info("Will write persons to file " + args.person)
-        logging.info("Will write streets to file " + args.street)
-        logging.info("Will write exceptions to file " + args.exceptions)
-
+        convert = addressWriter(args.input)
 
 except:
     logging.critical(
@@ -341,12 +351,19 @@ except:
     exit
 
 
-convert = addressWriter(
-    args=args,
-)
+if args.person:
+    logging.info("Will write persons to file " + args.person)
+    convert.writePersonsCsv(file=args.person)
+    writes = True
 
-convert.parseStreets()
-convert.parsePersons()
+if args.street:
+    logging.info("Will write streets to file " + args.street)
+    convert.writeStreetFile(file=args.street)
+    writes = True
+if args.exceptions:
+    logging.info("Will write exceptions to file " + args.exceptions)
+    convert.writeStreetExceptions(file=args.exceptions)
+    writes = True
 
-convert.writeStreetFile()
-convert.writeStreetExceptions()
+if not "writes" in locals():
+    logging.error("No output file specified - probably not what you want")
