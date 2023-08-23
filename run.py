@@ -23,7 +23,6 @@ class streetexception:
     exceptionType: str
     exceptionValue: str
     evenNumbers: bool
-    oddNumbers: bool
     exceptionFrom: int = None
     exceptionFromSuffix: str = None
     exceptionTo: int = None
@@ -68,10 +67,10 @@ class addressWriter:
                 firstName = " ".join(line[61:99].split())
                 occupation = " ".join(line[99:114].split())
                 careOf = " ".join(line[114:160].split())
-                streetNo = line[8:11]
-                floor = line[15:17].lower()
-                door = line[20:22].lower()
-                streetNoSuffix = line[12].upper()
+                streetNo = line[8:11].strip()
+                floor = line[15:17].lower().strip()
+                door = line[20:22].lower().strip()
+                streetNoSuffix = line[12].upper().strip()
 
                 logging.debug(
                     "We've got a live one! "
@@ -91,8 +90,8 @@ class addressWriter:
                     + careOf
                 )
                 newPerson = person(
-                    streetId=streetId,
-                    streetNo=streetNo,
+                    streetId=int(streetId),
+                    streetNo=int(streetNo),
                     streetNoSuffix=streetNoSuffix,
                     floor=floor,
                     door=door,
@@ -118,7 +117,7 @@ class addressWriter:
                         # designating the start of a new object
                         # store the last street before we move on - we're at the next one
                         streetObj = street(
-                            streetId=curStreet,
+                            streetId=int(curStreet),
                             streetName=streetName,
                             postCode=postCode,
                             parish=parish,
@@ -179,6 +178,22 @@ class addressWriter:
                             curStreet=curStreet,
                             fieldtype="district",
                         )
+        # write the last street to file, even though we're out of the loop
+        streetObj = street(
+            streetId=int(curStreet),
+            streetName=streetName,
+            postCode=postCode,
+            parish=parish,
+            town=town,
+            district=district,
+        )
+        self.streets.append(streetObj)
+        streetName = None
+        parish = None
+        town = None
+        postcode = None
+        streetObj = None
+        district = None
 
     def parseLineforExceptions(
         self, line: str, fields: list, curStreet: int, fieldtype: str
@@ -187,9 +202,11 @@ class addressWriter:
             if fields[4] == "nr":
                 logging.debug("exception found " + line)
 
+                # set isRange to false, so we can reset it if the try-clause below fails
+                isRange = False
                 # is this even or uneven numbers?
                 if line[12:17] == "Ulige":
-                    oddNumbers = True
+                    pass
                 elif line[12:16] == "Lige":
                     evenNumbers = True
                 else:
@@ -197,42 +214,47 @@ class addressWriter:
                     quit()
 
                 # set even or odd numbers to zero if not defined
-                if not "oddNumbers" in locals():
-                    oddNumbers = False
                 if not "evenNumbers" in locals():
                     evenNumbers = False
 
                 # check if there's a hyphen in position 26 - then its a range of numbers
-                if line[25] == "-":
-                    logging.debug("Hyphen found! - its a range")
-                    exceptionFrom = line[21:24]
-                    exceptionFromSuffix = line[24]
-                    exceptionTo = line[26:29]
-                    exceptionToSuffix = line[29]
-                    exceptionValue = " ".join(line[31:61].split())
+                try:
+                    if int("".join(line[21:24].split())) and int(
+                        "".join(line[26:29].split())
+                    ):
+                        logging.debug(
+                            "We have from- and to- streetnumbers - its a range!"
+                        )
+                        logging.debug(line)
+                        exceptionFrom = int("".join(line[21:24].split()))
+                        exceptionFromSuffix = line[24]
+                        exceptionTo = int("".join(line[26:29].split()))
+                        exceptionToSuffix = line[29]
+                        exceptionValue = " ".join(line[31:61].split())
 
-                    # we have constructed our exception, lets push it
-                    newException = streetexception(
-                        streetId=curStreet,
-                        exceptionType=fieldtype,
-                        exceptionValue=exceptionValue,
-                        exceptionFrom=exceptionFrom,
-                        exceptionFromSuffix=exceptionFromSuffix,
-                        exceptionTo=exceptionTo,
-                        exceptionToSuffix=exceptionToSuffix,
-                        oddNumbers=oddNumbers,
-                        evenNumbers=evenNumbers,
-                    )
-                    self.streetExceptions.append(newException)
-                else:
+                        # we have constructed our exception, lets push it
+                        newException = streetexception(
+                            streetId=int(curStreet),
+                            exceptionType=fieldtype,
+                            exceptionValue=exceptionValue,
+                            exceptionFrom=exceptionFrom,
+                            exceptionFromSuffix=exceptionFromSuffix,
+                            exceptionTo=exceptionTo,
+                            exceptionToSuffix=exceptionToSuffix,
+                            evenNumbers=evenNumbers,
+                        )
+                        self.streetExceptions.append(newException)
+                        isRange = True
+                except:
+                    pass
+                if isRange == False:
                     # no range, the value payload will have moved
                     exceptionValue = " ".join(line[21:61].split())
                     # we have constructed our exception, lets push it
                     newException = streetexception(
-                        streetId=curStreet,
+                        streetId=int(curStreet),
                         exceptionType=fieldtype,
                         exceptionValue=exceptionValue,
-                        oddNumbers=oddNumbers,
                         evenNumbers=evenNumbers,
                     )
                     self.streetExceptions.append(newException)
@@ -277,7 +299,6 @@ class addressWriter:
                 "Undtagelse type",
                 "Værdi til undtagelse",
                 "Lige numre",
-                "Ulige numre",
                 "FraHusNummer",
                 "FraHusNummerBogstav",
                 "TilHusNummer",
@@ -285,14 +306,13 @@ class addressWriter:
             ]
         )
         for exception in self.streetExceptions:
-            print(exception)
+            logging.debug(exception)
             self.exceptionWriter.writerow(
                 [
                     exception.streetId,
                     exception.exceptionType,
                     exception.exceptionValue,
                     exception.evenNumbers,
-                    exception.oddNumbers,
                     exception.exceptionFrom,
                     exception.exceptionFromSuffix,
                     exception.exceptionTo,
@@ -306,6 +326,116 @@ class addressWriter:
         self.personWriter = csv.writer(personfile, dialect="excel")
         if len(self.persons) == 0:
             self.parsePersons()
+        self.personWriter.writerow(
+            [
+                "Efternavn",
+                "Fornavne",
+                "Beskæftigelse",
+                "careOf",
+                "Vejnavn",
+                "Husnr",
+                "etageDør",
+                "PostnrBy",
+                "Flække",
+                "By",
+                "sogn",
+            ]
+        )
+        for person in self.persons:
+            writePerson = {
+                "lastName": person.lastName,
+                "firstName": person.firstName,
+                "occupation": person.occupation,
+                "careOf": person.careOf,
+                "streetNo": person.streetNo,
+                "streetNoSuffix": person.streetNoSuffix,
+                "floor": person.floor,
+                "door": person.door,
+            }
+            self.findStreetAndException(person=person, writePerson=writePerson)
+            logging.debug(person)
+            logging.info(writePerson)
+            if len(writePerson) < 5:
+                logging.error("No street info found, exiting for person:")
+                logging.error(writePerson)
+                logging.error(person)
+                quit()
+
+            self.personWriter.writerow(
+                [
+                    writePerson["lastName"],
+                    writePerson["firstName"],
+                    writePerson["occupation"],
+                    writePerson["careOf"],
+                    writePerson["streetName"],
+                    str(writePerson["streetNo"]) + str(writePerson["streetNoSuffix"]),
+                    str(writePerson["floor"]) + str(writePerson["door"]),
+                    writePerson["postCode"],
+                    writePerson["district"],
+                    writePerson["town"],
+                    writePerson["parish"],
+                ]
+            )
+        logging.info("wrote " + str(len(self.persons)) + " persons to file")
+
+    def findStreetAndException(self, person, writePerson):
+        if len(self.streetExceptions) == 0:
+            self.parseStreets()
+        for street in self.streets:
+            if street == person.streetId:
+                logging.debug("found street " + str(street))
+                writePerson["streetName"] = street.streetName
+                writePerson["postCode"] = street.postCode
+                writePerson["town"] = street.town
+                writePerson["parish"] = street.parish
+                writePerson["district"] = street.district
+
+        ## go searching through exceptions to see if we have an override
+        for exception in self.streetExceptions:
+            # Lets not declare exception before we've verified it
+            exceptionMatch = False
+            if exception == person.streetId:
+                logging.info(
+                    "maybe found exception? \n"
+                    + str(exception)
+                    + " vs person: \n"
+                    + str(person)
+                )
+                # from here on, it gets kinda messy, to be honest.
+                # Are we looking at an even streetNo?
+                if (person.streetNo % 2) == 0:
+                    evenNumber = True
+                else:
+                    evenNumber = False
+
+                # Does the exception need a streetNo match?
+                if exception.exceptionFrom == None and exception.exceptionTo == None:
+                    # No need to match house numbers - check if the even-ness is the same:
+                    if evenNumber == exception.evenNumbers:
+                        exceptionMatch = True
+                        logging.info("Exception Matched")
+
+                else:
+                    # we need to check house numbers
+                    if (
+                        person.streetNo <= exception.exceptionFrom
+                        and person.streetNo >= exception.exceptionTo
+                    ):
+                        logging.info("We're in the right number range")
+                if exceptionMatch == True:
+                    # create variable based on the kind of exception
+                    if exception.exceptionType == "parish":
+                        logging.info("replaced parish from exception")
+                        writePerson["parish"] = exception.exceptionValue
+                    if exception.exceptionType == "district":
+                        logging.info("replaced parish from exception")
+                        writePerson["district"] = exception.exceptionValue
+                    if exception.exceptionType == "postcode":
+                        logging.info("replaced postcode from exception")
+                        writePerson["postcode"] = exception.exceptionValue
+                    if exception.exceptionType == "town":
+                        logging.info("replaced town from exception")
+                        writePerson["town"] = exception.exceptionValue
 
 
 logging.basicConfig(
