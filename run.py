@@ -390,6 +390,7 @@ class addressWriter:
             self.parsePersons()
         self.personWriter.writerow(
             [
+                "gadeID",
                 "Efternavn",
                 "Fornavne",
                 "Beskæftigelse",
@@ -405,6 +406,7 @@ class addressWriter:
         )
         for person in self.persons:
             writePerson = {
+                "streetId": person.streetId,
                 "lastName": person.lastName,
                 "firstName": person.firstName,
                 "occupation": person.occupation,
@@ -425,6 +427,7 @@ class addressWriter:
 
             self.personWriter.writerow(
                 [
+                    writePerson["streetId"],
                     writePerson["lastName"],
                     writePerson["firstName"],
                     writePerson["occupation"],
