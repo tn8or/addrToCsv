@@ -272,6 +272,7 @@ class addressWriter:
     ) -> any:
         if len(fields) >= 5:
             if fields[4] == "nr":
+                isRange = None
                 logging.debug("exception found " + line)
 
                 # set isRange to false, so we can reset it if the try-clause below fails
@@ -297,11 +298,13 @@ class addressWriter:
                         logging.debug(
                             "We have from- and to- streetnumbers - its a range!"
                         )
+                        isRange = True
+
                         logging.debug(line)
                         exceptionFrom = int("".join(line[21:24].split()))
-                        exceptionFromSuffix = line[24]
+                        exceptionFromSuffix = line[24].strip()
                         exceptionTo = int("".join(line[26:29].split()))
-                        exceptionToSuffix = line[29]
+                        exceptionToSuffix = line[29].strip()
                         exceptionValue = " ".join(line[31:61].split())
 
                         # we have constructed our exception, lets push it
@@ -317,8 +320,6 @@ class addressWriter:
                         )
                         self.streetExceptions.append(newException)
                         logging.debug("added exception " + str(newException))
-
-                        isRange = True
                 except:
                     pass
                 if isRange == False:
@@ -513,12 +514,22 @@ class addressWriter:
                         logging.info("Exception Matched")
 
                 else:
-                    # we need to check house numbers
+                    logging.debug(exception)
+                    logging.debug(person)
+
+                    # we need to check house numbers and suffices
                     if (
-                        person.streetNo <= exception.exceptionFrom
-                        and person.streetNo >= exception.exceptionTo
+                        person.streetNo >= exception.exceptionFrom
+                        and person.streetNo <= exception.exceptionTo
                     ):
-                        logging.info("We're in the right number range")
+                        # is this suffix-less?
+                        if person.streetNoSuffix == "" or (
+                            person.streetNoSuffix >= exception.exceptionFromSuffix
+                            and person.streetNoSuffix <= exception.exceptionToSuffix
+                        ):
+                            logging.info("exception match")
+                            exceptionMatch = True
+
                 if exceptionMatch == True:
                     # create variable based on the kind of exception
                     if exception.exceptionType == "parish":
