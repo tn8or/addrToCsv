@@ -2,7 +2,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 8,Abildholtvej,Haderup Sogn,7500 Holstebro,Feldborg,Hogager
 12,Abildåvej,,,,Abildå
 70,Absalonsvej,Fredens Sogn,7400 Herning,Herning,
-80,Adelstien,,7400 Herning,,
+80,Adelstien,,,,
 82,Adelvej,Rind Sogn,7400 Herning,Lind,Lind
 87,Agerbjerg,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 14,Agerfeldvej,Vinding Sogn,7550 Sørvad,Vinding,
@@ -17,11 +17,11 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 5,A.I. Holms Vej,Skt Johannes Sogn,7400 Herning,Herning,
 129,Akacievej,Skt Johannes Sogn,7400 Herning,Herning,
 130,Akelejevej,Rind Sogn,7400 Herning,Lind,Høgild
-2,A.L. Andersensvej,,7400 Herning,,
+2,A.L. Andersensvej,,,,
 24,Albækhedevej,Assing Sogn,6933 Kibæk,Kibæk,Troldhede
 25,Albækvej,,7480 Vildbjerg,,
 145,Albækvej,,7400 Herning,Snejbjerg,Snejbjerg
-165,Alhedestien,,7400 Herning,,
+165,Alhedestien,,,,
 26,Alkhøjvej,Assing Sogn,6933 Kibæk,Kibæk,
 175,Allingevej,Herning Sogn,7400 Herning,Herning,
 180,Amalievej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
@@ -30,8 +30,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 211,Anemonevej,Herning Sogn,7400 Herning,Herning,
 222,Anne-Maries Vej,Rind Sogn,7400 Herning,Lind,Lind
 11,A.P. Møllers Vej,Herning Sogn,7400 Herning,Herning,
-253,Arnborg Kirke P Pl,,7400 Herning,,
-256,Arnborgskolestien,,7400 Herning,,
+253,Arnborg Kirke P Pl,,,,
+256,Arnborgskolestien,,,,
 30,Arnborgvej,Assing Sogn,6933 Kibæk,Kibæk,
 258,Arnborgvej,,,Arnborg,
 268,Asbjergvej,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
@@ -49,9 +49,9 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 328,Bakkevænget,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 47,Baldersvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,Skibbild
 340,Baldersvej,Skt Johannes Sogn,7400 Herning,Herning,
-1573,Baldrianvej,,7400 Herning,,
+1573,Baldrianvej,,,,
 343,Banegårdspladsen,Herning Sogn,7400 Herning,Herning,
-346,Banegårdspl P Plads,,7400 Herning,,
+346,Banegårdspl P Plads,,,,
 48,Banevænget,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 345,Banevænget,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 52,Barslundvej,Karstoft Sogn,,Skarrild,Karstoft
@@ -63,8 +63,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 398,Baunevej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 56,Baunsgårdvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 57,Bavnehøjen,Assing Sogn,6933 Kibæk,Kibæk,
-1409,Bavnehøjen P Plads,,6933 Kibæk,,
-1413,Bavnehøjstien,,6933 Kibæk,,
+1409,Bavnehøjen P Plads,,,,
+1413,Bavnehøjstien,,,,
 59,Bavnevej,Haderup Sogn,7470 Karup J,Haderup,Fårbæk
 410,Beethovensvej,Hedeager Sogn,7400 Herning,Herning,
 61,Bekkasinvej,Assing Sogn,6933 Kibæk,Kibæk,
@@ -82,8 +82,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 501,Birk Centerpark,Gjellerup Sogn,7400 Herning,Hammerum,Birk
 67,Birke Alle,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 516,Birke Alle,Herning Sogn,7400 Herning,Herning,
-1392,Birkebakken,,7400 Herning,,
-1417,Birkebystien,,7400 Herning,,
+1392,Birkebakken,,,,
+1417,Birkebystien,,,,
 69,Birkebyvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 539,Birkebækvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 555,Birkegårdsvej,Gjellerup Sogn,7400 Herning,Hammerum,Birk
@@ -97,7 +97,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 586,Birkevænget,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 76,Birkkjærvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 78,Birkmosevej,Timring Sogn,7480 Vildbjerg,Timring,Timring
-79,Birkmosevej,,7480 Vildbjerg,,
+79,Birkmosevej,,,,
 592,Bitsovvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 597,Bjalderbækvej,Tjørring Sogn,7400 Herning,Tjørring,
 1497,Bjalderbækvej Nord,,7400 Herning,,
@@ -105,7 +105,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 615,Bjerggårdvej,Studsgård Sogn,7400 Herning,Studsgård,Studsgård
 622,Bjergkvarteret,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 89,Bjergmosevej,Aulum Sogn,7490 Aulum,Aulum,
-618,Bjergstien,,7490 Aulum,,
+618,Bjergstien,,,,
 91,Bjerregårdvej,,7480 Vildbjerg,,Timring
 634,Bjerregårdvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 92,Bjerregårdvænget,Timring Sogn,7480 Vildbjerg,Timring,Timring
@@ -144,12 +144,12 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 124,Bredgade,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 727,Bredgade,Herning Sogn,7400 Herning,Herning,
 128,Bredkjærvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,
-132,Bredmosegården,,7480 Vildbjerg,,
+132,Bredmosegården,,,,
 735,Bredmosevej,Rind Sogn,7400 Herning,Lind,Høgild
 755,Bredvigvej,,,,
 134,Brinkevej,Assing Sogn,6933 Kibæk,Kibæk,
 137,Brogade,Assing Sogn,6933 Kibæk,Kibæk,
-773,Brogårdstien,,6933 Kibæk,,
+773,Brogårdstien,,,,
 138,Brogårdvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 774,Brogårdvej,,7400 Herning,,
 139,Brohusvej,Aulum Sogn,7490 Aulum,Aulum,
@@ -165,7 +165,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 150,Burgårdsvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 855,Buskvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 868,Bygaden,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
-870,Bygadens P Plads,,7400 Herning,,
+870,Bygadens P Plads,,,,
 875,Byghaven,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 877,Bygmarken,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 151,Bygvej,Aulum Sogn,7490 Aulum,Aulum,
@@ -183,17 +183,17 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 161,Bødkervej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 162,Bødkervej,Aulum Sogn,7490 Aulum,Aulum,
 952,Bødkervej,Sunds Sogn,7451 Sunds,Sunds,
-1391,Bøgebakken,,7451 Sunds,,
+1391,Bøgebakken,,,,
 1475,Bøgehaven,Hedeager Sogn,7400 Herning,Herning,
 954,Bøgens Kvarter,Gullestrup Sogn,7400 Herning,Gullestrup,Skovbyen
 1535,Bøgeparken,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 955,Bøgeskovvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
-960,Bøgestien,,7451 Sunds,,
+960,Bøgestien,,,,
 163,Bøgevej,Aulum Sogn,7490 Aulum,Aulum,
 166,Bøgevej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 168,Bøgevej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 973,Bøgevænget,Skt Johannes Sogn,7400 Herning,Herning,
-984,Børglumstien,,7400 Herning,,
+984,Børglumstien,,,,
 985,Børglumvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 997,Carit Etlars Gade,Herning Sogn,7400 Herning,Herning,
 1008,Carl Nielsens Vej,Hedeager Sogn,7400 Herning,Herning,
@@ -203,23 +203,23 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1043,Chr. Dalgas Vej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 1060,Christiansgade,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1055,Chr. Ydes Vej,,7400 Herning,Herning,
-1065,Citypassagen,,7400 Herning,,
+1065,Citypassagen,,,,
 170,Clasonsborgvej,Karstoft Sogn,6933 Kibæk,Skarrild,Karstoft
 1068,Cypresvej,Skt Johannes Sogn,7400 Herning,Herning,
 1070,Dagmarvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 1079,Dalgas Alle,,7400 Herning,Herning,
 1090,Dalgasgade,Herning Sogn,7400 Herning,Herning,
-1092,Dalgasgades P Plads,,7400 Herning,,
-1095,Dalgaspassagen,,7400 Herning,,
+1092,Dalgasgades P Plads,,,,
+1095,Dalgaspassagen,,,,
 1085,Dalgas Plads,Herning Sogn,7400 Herning,Herning,
-1416,Dalgasstien,,7400 Herning,,
+1416,Dalgasstien,,,,
 172,Dalgasvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 174,Damstrupvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 1150,Damtoftevej,Sunds Sogn,7451 Sunds,Sunds,
 1155,Danasvej,Skt Johannes Sogn,7400 Herning,Herning,
 176,Danmarksgade,Aulum Sogn,7490 Aulum,Aulum,
 1161,Danmarksgade,Herning Sogn,7400 Herning,Herning,
-1162,Danmarksgades P Pl,,7400 Herning,,
+1162,Danmarksgades P Pl,,,,
 1196,Degnekrogen,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 178,Digevej,Vinding Sogn,7550 Sørvad,Vinding,
 1208,Digevej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
@@ -228,7 +228,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1231,Drejet,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 184,Drongstrup Mark,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 185,Drongstrupvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
-1232,Dronningens Boulev,,7280 Sønder Felding,,
+1232,Dronningens Boulev,,,,
 186,Drosselvej,Haderup Sogn,7540 Haderup,Haderup,
 188,Drosselvej,Timring Sogn,7480 Vildbjerg,Timring,Timring
 1233,Drosselvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
@@ -237,8 +237,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1240,Dunhammervej,Rind Sogn,7400 Herning,Lind,Høgild
 1243,Dyshøj,Rind Sogn,7400 Herning,Lind,Lind
 1255,Dæmningen,Skt Johannes Sogn,7400 Herning,Herning,
-1256,Dæmningstien,,7400 Herning,,
-1260,Dørslundvej,,7400 Herning,,
+1256,Dæmningstien,,,,
+1260,Dørslundvej,,,,
 193,Døvlingvej,Karstoft Sogn,,Skarrild,
 1263,Egebakken,Gullestrup Sogn,7400 Herning,Gullestrup,Gullestrup
 196,Egebækvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,
@@ -268,7 +268,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 221,Energivej,Assing Sogn,6933 Kibæk,Kibæk,
 223,Engbakken,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 1432,Engbjerg,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
-1434,Engbjergskolestien,,7400 Herning,,
+1434,Engbjergskolestien,,,,
 1433,Engblommevej,Rind Sogn,7400 Herning,Lind,Høgild
 1435,Engdahlsvej,Gjellerup Sogn,7400 Herning,Hammerum,Birk
 224,Engdraget,Aulum Sogn,7490 Aulum,Aulum,
@@ -287,7 +287,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 239,Engkrogen,Assing Sogn,6933 Kibæk,Kibæk,
 240,Engkrogen,Vinding Sogn,7550 Sørvad,Vinding,
 1477,Engkrogen,Herning Sogn,7400 Herning,Herning,
-241,Engstien,,7400 Herning,,
+241,Engstien,,,,
 243,Engvangen,Vinding Sogn,7550 Sørvad,Vinding,
 244,Engvej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 245,Engvej,Aulum Sogn,7490 Aulum,Aulum,
@@ -298,7 +298,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 250,Europavej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 251,Fabriksvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 254,Fabriksvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
-1404,Fabriksvej P Plads,,6973 Ørnhøj,,
+1404,Fabriksvej P Plads,,,,
 1489,Faksevej,Fredens Sogn,7400 Herning,Herning,
 255,Falkevej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 257,Falkevej,Haderup Sogn,7540 Haderup,Haderup,
@@ -316,8 +316,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1596,Fastrupvej,,7400 Herning,,
 1598,Faunbjergvej,Simmelkær Sogn,7451 Sunds,Simmelkær,Simmelkær
 1369,Fejerskovparken,Rind Sogn,7400 Herning,Lind,Lind
-1608,Fejerskovvej,,7400 Herning,,
-2526,Fejloprettet,,7400 Herning,,
+1608,Fejerskovvej,,,,
+2526,Fejloprettet,,,,
 1625,Feldbakvej,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 264,Feldbjergvej,,7480 Vildbjerg,,
 265,Feldborgvej,,,,
@@ -346,27 +346,27 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 278,Frejasvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,Skibbild
 1462,Fresiahaven,Gjellerup Sogn,7400 Herning,Hammerum,
 1860,Frifeltvej,Fasterholt Sogn,7330 Brande,Arnborg,Fasterholt
-1864,Frijsenborgstien,,7330 Brande,,
+1864,Frijsenborgstien,,,,
 1865,Frijsenborgvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 1876,Frilandsvej,Rind Sogn,7400 Herning,Lind,Lind
 1880,Friskolevej,Fasterholt Sogn,7330 Brande,Arnborg,Fasterholt
-1552,Frk. Sanggaards Gade,,7330 Brande,,
+1552,Frk. Sanggaards Gade,,,,
 1888,Fruehøjvej,,7400 Herning,Herning,
 279,Fruerbyvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 1487,Frølundparken,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1911,Frølundvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1488,Frølundvænget,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1912,Frøskovparken,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
-1908,Frøskovstien,,7400 Herning,,
+1908,Frøskovstien,,,,
 284,Fuglevænget,Timring Sogn,7480 Vildbjerg,Timring,Timring
 1913,Fuglsang Allé,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 1916,Fuglsang Holm,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 1918,Fuglsang Næs,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 286,Fuglsangsvej,Timring Sogn,7480 Vildbjerg,Timring,Timring
 1935,Fuglsangsvej,Skt Johannes Sogn,7400 Herning,Herning,
-1919,Fuglsang Sø,,7400 Herning,,
+1919,Fuglsang Sø,,,,
 1920,Fuglsang Toft,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
-1925,Fuglsang Torv,,7400 Herning,,
+1925,Fuglsang Torv,,,,
 289,Fuglsangvej,Vind Sogn,7500 Holstebro,Vind,Vind
 290,Fynsgade,Aulum Sogn,7490 Aulum,Aulum,
 1947,Fynsgade,,7400 Herning,Herning,
@@ -400,12 +400,12 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 2045,Gilmosevænget,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 314,Gindeskovgård,,7540 Haderup,Feldborg,Feldborg
 315,Gindeskovvej,,7540 Haderup,,
-2051,Gisselfeldstien,,7540 Haderup,,
+2051,Gisselfeldstien,,,,
 2052,Gisselfeldvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 2080,Gjellerupbakken,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-2082,Gjellerup-Lundstien,,7400 Herning,,
-2084,Gjellerupskolestien,,7400 Herning,,
-2085,Gjellerupstien,,7400 Herning,,
+2082,Gjellerup-Lundstien,,,,
+2084,Gjellerupskolestien,,,,
+2085,Gjellerupstien,,,,
 321,Glentevej,Assing Sogn,6933 Kibæk,Kibæk,
 2205,Glentevej,,7400 Herning,Herning,
 318,Gl. Høgsvigvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
@@ -418,10 +418,10 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 2172,Gl. Sundsvej,Sunds Sogn,7451 Sunds,Sunds,
 2181,Gl. Vejlevej,,7400 Herning,Herning,
 2185,Gl. Ørskovvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
-2209,Godsbanestien,,7400 Herning,,
+2209,Godsbanestien,,,,
 2210,Godsbanevej,,7400 Herning,Herning,
-2211,Godsbanevejs P Pl,,7400 Herning,,
-1446,Godssporet,,7400 Herning,,
+2211,Godsbanevejs P Pl,,,,
+1446,Godssporet,,,,
 2216,Godthåbsvej,,7400 Herning,Herning,
 323,Godthaabsvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 2220,Golfbanen,,7400 Herning,,
@@ -445,14 +445,14 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 2357,Grundtvigsvej,Skt Johannes Sogn,7400 Herning,Herning,
 338,Grønbjergvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,Abildå
 339,Grønbækparken,Aulum Sogn,7490 Aulum,Aulum,
-341,Grønbækstien,,7490 Aulum,,
+341,Grønbækstien,,,,
 2381,Grøndahlsvej,Herning Sogn,7400 Herning,Herning,
 347,Grønlandsvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 2390,Grønlundvej,Fasterholt Sogn,7330 Brande,Arnborg,Fasterholt
 2393,Grønlundvænget,Fasterholt Sogn,7330 Brande,Arnborg,Fasterholt
 348,Grønnegade,Assing Sogn,6933 Kibæk,Kibæk,
 2404,Grønnegade,Herning Sogn,7400 Herning,Herning,
-1406,Grønnegade P Plads,,7400 Herning,,
+1406,Grønnegade P Plads,,,,
 350,Grønningen,Vinding Sogn,7550 Sørvad,Vinding,
 351,Grønningen,Aulum Sogn,7490 Aulum,Aulum,
 2428,Grønningen,Studsgård Sogn,7400 Herning,Studsgård,Studsgård
@@ -469,17 +469,17 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 2543,Gunderupvej,Kollund Sogn,7400 Herning,Lind,Kollund
 1566,Gyldenrisvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Gødstrup
 2550,Gyvelens Kvarter,Gullestrup Sogn,7400 Herning,Gullestrup,Hedebyen
-2554,Gyvelstien,,7400 Herning,,
+2554,Gyvelstien,,,,
 356,Gyvelvej,Vinding Sogn,7550 Sørvad,Vinding,
 357,Gyvelvej,Aulum Sogn,7490 Aulum,Aulum,
 2557,Gyvelvej,Skt Johannes Sogn,7400 Herning,Herning,
-2595,Gødstrup Sø,,7400 Herning,,
+2595,Gødstrup Sø,,,,
 2600,Gødstrup Søvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Gødstrup
 2604,Gødstrupvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,
 1515,Gødstrupvænget,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 358,Gårdbækvej,,7480 Vildbjerg,Timring,
 361,Haderisvej,Haderup Sogn,7540 Haderup,Haderup,
-1540,Haderup Omfartsvej,,7540 Haderup,,
+1540,Haderup Omfartsvej,,,,
 2668,Hagelskærvej,Studsgård Sogn,7400 Herning,Studsgård,Studsgård
 366,Halkjærvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 370,Hallundbækvej,,,,
@@ -487,8 +487,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 2676,Hammershusvej,Herning Sogn,7400 Herning,Herning,
 2678,Hammerumholmvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 2680,Hammerum Hovedgade,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-2681,Hammerum Hovedg P Pl,,7400 Herning,,
-2682,Hammerumskolestien,,7400 Herning,,
+2681,Hammerum Hovedg P Pl,,,,
+2682,Hammerumskolestien,,,,
 2686,Hammerumvej,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 2697,Hans Egedes Vej,Herning Sogn,7400 Herning,Herning,
 2709,Haraldsgade,Fredens Sogn,7400 Herning,Herning,
@@ -510,7 +510,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 2815,Havrevænget,Herning Sogn,7400 Herning,Herning,
 2838,Haydnsvej,Hedeager Sogn,7400 Herning,Herning,
 2615,H.C. Ørsteds Vej,,7400 Herning,Herning,
-2839,Hedeager Kirkestien,,7400 Herning,,
+2839,Hedeager Kirkestien,,,,
 389,Hedebyvej,S Felding Sogn,,Sdr. Felding,Troldhede
 2840,Hedegårdvej,,7400 Herning,Kølkær,Kølkær
 393,Hedegaardsvej,Assing Sogn,6933 Kibæk,Kibæk,
@@ -522,17 +522,17 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 396,Helleskovvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 1533,Helstrupbakken,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 2909,Helstrupvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,
-2911,Helstrupvejs P Pl,,7400 Herning,,
+2911,Helstrupvejs P Pl,,,,
 1534,Helstrupvænget,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 400,Henningsvej,Vinding Sogn,7550 Sørvad,Vinding,
 2915,Henrik Dalgas Vej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
 2650,Herluf Trolles Vej,Skt Johannes Sogn,7400 Herning,Herning,
 401,Hermodsvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,Skibbild
-2943,Herningholmstien,,7480 Vildbjerg,,
+2943,Herningholmstien,,,,
 2945,Herningholmåstien,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 2942,Herninglund,Herning Sogn,7400 Herning,Herning,
 2941,Herninglund P Plads,Herning Sogn,7400 Herning,Herning,
-2950,Herningmotorvejen,,7400 Herning,,
+2950,Herningmotorvejen,,,,
 1479,Herningsholm Alle,Fredens Sogn,7400 Herning,Herning,
 2944,Herningsholmvej,Fredens Sogn,7400 Herning,Herning,
 402,Herningvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,Skibbild
@@ -545,20 +545,20 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 415,Hestbjergvej,,,,
 416,Hestbjergvej,Vind Sogn,7500 Holstebro,Vind,Vind
 2990,Hestlundvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
-1496,Hilmar Sølunds Vej,,7451 Sunds,,
+1496,Hilmar Sølunds Vej,,,,
 2993,HI-Park,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 417,Hirsevænget,Aulum Sogn,7490 Aulum,Aulum,
 419,Hjejlevej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 421,Hjejlevej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 2995,Hjejlevej,Sunds Sogn,7451 Sunds,Sunds,
-2997,Hjejlevejstien,,7451 Sunds,,
+2997,Hjejlevejstien,,,,
 3001,Hjortdalvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 3003,Hjortehøj,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 1507,Hjortemarken,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 3005,Hjortsballehøjevej,Rind Sogn,6933 Kibæk,Lind,
 424,Hjortsballevej,,7480 Vildbjerg,,
-425,Hjortsballevej,,7480 Vildbjerg,,
-1572,Hjulkronevej,,7480 Vildbjerg,,
+425,Hjortsballevej,,,,
+1572,Hjulkronevej,,,,
 3015,Hjøllundvej,,7400 Herning,,Arnborg
 2627,H.N. Andersens Vej,Herning Sogn,7400 Herning,Herning,
 427,Hodsagervej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
@@ -567,19 +567,19 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 3026,Holbækvej,Fredens Sogn,7400 Herning,Herning,
 1529,Holing Engpark,Hedeager Sogn,7400 Herning,Herning,Holing
 3030,Holingknuden,Herning Sogn,7400 Herning,Herning,
-3032,Holing Sø,,7400 Herning,,
+3032,Holing Sø,,,,
 3070,Holingvej,Herning Sogn,7400 Herning,Herning,
 3068,Hollingholtvej,Sunds Sogn,7451 Sunds,Sunds,
 3073,Holmegårdvej,Rind Sogn,7400 Herning,Lind,Lind
-1389,Holmen,,7400 Herning,,
+1389,Holmen,,,,
 430,Holm Parken,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 3084,Holmparken,Fredens Sogn,7400 Herning,Herning,
-3091,Holstebrobanestien,,7400 Herning,,
-1517,Holstebromotorvejen,,7400 Herning,,
+3091,Holstebrobanestien,,,,
+1517,Holstebromotorvejen,,,,
 431,Holstebrovej,Vind Sogn,7500 Holstebro,Vind,Vind
 432,Holstebrovej,Aulum Sogn,7490 Aulum,Aulum,
 3096,Holstebrovej,,7400 Herning,Herning,
-3130,Holtbjerg P Plads,,7400 Herning,,
+3130,Holtbjerg P Plads,,,,
 433,Holtevej,Aulum Sogn,7490 Aulum,Aulum,
 3132,Holtumvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 3140,Holtvej,Rind Sogn,7400 Herning,Lind,Høgild
@@ -590,10 +590,10 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 438,Hovedgaden,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 439,Hovedgaden,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 440,Hovedgaden,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
-1401,Hovedgaden P Plads,,6933 Kibæk,,
+1401,Hovedgaden P Plads,,,,
 441,Hovedvejen,Aulum Sogn,7490 Aulum,Aulum,
 442,Hovenvej,Ilderhede Sogn,7270 Stakroge,Sdr. Felding,
-2637,H P Hansenstien,,7270 Stakroge,,
+2637,H P Hansenstien,,,,
 2639,H.P. Hansens Vej,,7400 Herning,Herning,
 3224,Humlevænget,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 446,Hvedde Mosevej,Assing Sogn,6933 Kibæk,Kibæk,
@@ -614,7 +614,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 3300,Hyldevænget,Skt Johannes Sogn,7400 Herning,Herning,
 3307,Händelsvej,Hedeager Sogn,7400 Herning,Herning,
 3332,Høgildgårdvej,,7400 Herning,,
-455,Høgildgaardsvej,,7400 Herning,,
+455,Høgildgaardsvej,,,,
 3340,Høgild Hovedgade,Rind Sogn,7400 Herning,Lind,Høgild
 456,Høgildvej,Aulum Sogn,7490 Aulum,Aulum,
 461,Høgsvigvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
@@ -625,7 +625,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 466,Højgade,Timring Sogn,7480 Vildbjerg,Timring,Timring
 468,Højgade,Aulum Sogn,7490 Aulum,Aulum,
 3378,Højgade,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-3380,Højgades P Plads,,7400 Herning,,
+3380,Højgades P Plads,,,,
 3401,Højgårdvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 3403,Højgårdvænget,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 465,Højgaardsvej,Karstoft Sogn,6933 Kibæk,Skarrild,Karstoft
@@ -642,7 +642,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 483,Ilderhedevej,Ilderhede Sogn,7270 Stakroge,Sdr. Felding,
 3507,Ildsgårdvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
 3510,Ilskov Hovedgade,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
-3512,Ilskov Hovedg P Pl,,7451 Sunds,,
+3512,Ilskov Hovedg P Pl,,,,
 3535,Ilskovvej,,7451 Sunds,,
 3542,Indertoften,Rind Sogn,7400 Herning,Lind,Lind
 484,Industriparken,Assing Sogn,6933 Kibæk,Kibæk,
@@ -655,7 +655,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 490,Industrivej Syd,Aulum Sogn,7490 Aulum,Aulum,
 3558,Industrivej Syd,Gjellerup Sogn,7400 Herning,Hammerum,Birk
 3560,Industrivænget,Rind Sogn,7400 Herning,Lind,Lind
-1569,Ingefærvej,,7400 Herning,,
+1569,Ingefærvej,,,,
 3565,Ingemannsvej,Skt Johannes Sogn,7400 Herning,Herning,
 3568,Ingridsvej,Rind Sogn,7400 Herning,Lind,Lind
 1478,Irishaven,Hedeager Sogn,7400 Herning,Herning,
@@ -671,16 +671,16 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 496,J. Chr. Nielsens Vej,Timring Sogn,7480 Vildbjerg,Timring,Timring
 497,Jens Jensensvej,Haderup Sogn,7540 Haderup,Haderup,
 3630,Jens Mathiasens Vej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-3635,Jens Provst Stien,,7400 Herning,,
+3635,Jens Provst Stien,,,,
 3636,Jens Provsts Vej,Arnborg Sogn,,Arnborg,Arnborg
 3648,Jeppe Aakjærs Vej,Fredens Sogn,7400 Herning,Herning,
 498,Jernbane Alle,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 499,Jernbanegade,Aulum Sogn,7490 Aulum,Aulum,
 500,Jernbanegade,Assing Sogn,6933 Kibæk,Kibæk,
 3671,Jernbanegade,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-1426,Jernbanegade Ppladsv,,7400 Herning,,
-1412,Jernbanegade Ppladsø,,7400 Herning,,
-3673,Jernbanegades P Pl,,7400 Herning,,
+1426,Jernbanegade Ppladsv,,,,
+1412,Jernbanegade Ppladsø,,,,
+3673,Jernbanegades P Pl,,,,
 3680,Jernkilde,Herning Sogn,7400 Herning,Herning,
 507,Jersildvej,Aulum Sogn,7490 Aulum,Aulum,
 509,Johansvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
@@ -695,7 +695,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 3738,Kaj Zartows Vej,,7400 Herning,,
 515,Kaldalsvej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 3741,Kalundborgvej,Fredens Sogn,7400 Herning,Herning,
-1568,Kamillevej,,7400 Herning,,
+1568,Kamillevej,,,,
 3748,Kampmannsgade,Herning Sogn,7400 Herning,Herning,
 1510,Kapelvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Gødstrup
 3753,Kaprifolievej,Skt Johannes Sogn,7400 Herning,Herning,
@@ -712,10 +712,10 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 3828,Keldsgårdvej,Sunds Sogn,7451 Sunds,Sunds,Linå
 3833,Kiderisvej,Rind Sogn,7400 Herning,Lind,Lind
 3840,Kiersvej,Sunds Sogn,7451 Sunds,Sunds,Røjen
-3846,Kikkenborgstien,,7451 Sunds,,
+3846,Kikkenborgstien,,,,
 3847,Kikkenborgvej,Skt Johannes Sogn,7400 Herning,Herning,
 3852,Kildehøj,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-3855,Kildehøjstien,,7400 Herning,,
+3855,Kildehøjstien,,,,
 1538,Kildeskovvej,Fasterholt Sogn,7330 Brande,Arnborg,Fasterholt
 528,Kildevangen,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 529,Kildevej,Aulum Sogn,7490 Aulum,Aulum,
@@ -728,12 +728,12 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 535,Kirkely,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 3945,Kirkely,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 536,Kirkepladsen,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
-1427,Kirkestien,,6933 Kibæk,,
+1427,Kirkestien,,,,
 537,Kirkestræde,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 3950,Kirkesvinget,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 538,Kirkevangen,Vinding Sogn,7550 Sørvad,Vinding,
 541,Kirkevej,Haderup Sogn,7540 Haderup,Haderup,
-3974,Kirkevængestien,,7540 Haderup,,
+3974,Kirkevængestien,,,,
 3975,Kirkevænget,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 543,Kirsdalvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 1577,Kirsebærbakken,,7400 Herning,,Tjørring
@@ -745,7 +745,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 549,Klinkegaardsvej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 4030,Klinkhøjvej,,,,
 550,Klintebakken,Assing Sogn,6933 Kibæk,Kibæk,
-1422,Klintebakkestien,,6933 Kibæk,,
+1422,Klintebakkestien,,,,
 552,Klinten,Assing Sogn,6933 Kibæk,Kibæk,
 4035,Klintevænget,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 4037,Klintholmvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
@@ -757,14 +757,14 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 553,Kløvermarken,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 4046,Kløvermarken,Herning Sogn,7400 Herning,Herning,
 1371,Kløverparken,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
-1508,Kløvertorvet,,7400 Herning,,
+1508,Kløvertorvet,,,,
 556,Kløvervej,Aulum Sogn,7490 Aulum,Aulum,
 4050,Kløvervej,Gjellerup Sogn,7400 Herning,Hammerum,Birk
 557,Kløvervænget,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 4070,Kløvervænget,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 3720,K. Møllers Vej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 4092,Knudmoseparken,Rind Sogn,7400 Herning,Lind,Lind
-4096,Knudmosesøerne,,7400 Herning,,
+4096,Knudmosesøerne,,,,
 4095,Knudmosevej,,7400 Herning,Lind,
 4082,Knud Rasmussens Vej,Herning Sogn,7400 Herning,Herning,
 4128,Knudsvej,Fredens Sogn,7400 Herning,Herning,
@@ -774,7 +774,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 4164,Kollundvej,,7400 Herning,Lind,
 4175,Kongeåvej,Hedeager Sogn,7400 Herning,Herning,
 4180,Kornblomstens Kvart,Gullestrup Sogn,7400 Herning,Gullestrup,Engbyen
-561,Kornstien,,7400 Herning,,
+561,Kornstien,,,,
 562,Korsbækvej,Vinding Sogn,7550 Sørvad,Vinding,
 564,Korsholmsvej,Aulum Sogn,7490 Aulum,Aulum,
 1500,Korsholmsvænget,Aulum Sogn,7490 Aulum,Aulum,
@@ -782,7 +782,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 4199,Korsørvej,Fredens Sogn,7400 Herning,Herning,
 1375,Kousgaards Plads,Herning Sogn,7400 Herning,Herning,
 4210,Koustrup Alle,Rind Sogn,7400 Herning,Lind,Lind
-4212,Koustrup Alle Stien,,7400 Herning,,
+4212,Koustrup Alle Stien,,,,
 1557,Koustrup Have,Rind Sogn,7400 Herning,Lind,
 4214,Koustrup Mark,Rind Sogn,7400 Herning,Lind,Lind
 4215,Koustrupparken,Rind Sogn,7400 Herning,Lind,Lind
@@ -819,14 +819,14 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 4445,Køgevej,Fredens Sogn,7400 Herning,Herning,
 4450,Kølbækvej,Sunds Sogn,7451 Sunds,Sunds,
 4475,Kølkær Hovedgade,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
-4477,Kølkær Hovedg P Pl,,7400 Herning,,
-4476,Kølkær Kirke P Plads,,7400 Herning,,
+4477,Kølkær Hovedg P Pl,,,,
+4476,Kølkær Kirke P Plads,,,,
 4479,Kølkærvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 4492,Labyrinten,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 583,Laksestien,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
-4494,Landbrugsskolestien,,6933 Kibæk,,
+4494,Landbrugsskolestien,,,,
 584,Landsbyparken,Assing Sogn,6933 Kibæk,Kibæk,
-1418,Landsbyparkstien,,6933 Kibæk,,
+1418,Landsbyparkstien,,,,
 4496,Landts Gård,Herning Sogn,7400 Herning,Herning,
 4498,Langbakkevej,,7451 Sunds,,Simmelkær
 585,Langbovej,Aulum Sogn,7490 Aulum,Aulum,
@@ -859,14 +859,14 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 4680,Lindegårdsvej,,7400 Herning,Herning,
 604,Lindevej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 4670,Lind Hovedgade,Rind Sogn,7400 Herning,Lind,Lind
-4682,Lind Skole P Plads,,7400 Herning,,
+4682,Lind Skole P Plads,,,,
 4714,Linnebjergvej,,7451 Sunds,,
 4705,Linåparken,Sunds Sogn,7451 Sunds,Sunds,
 4707,Linåtoften,Sunds Sogn,7451 Sunds,Sunds,
 4710,Linåvej,Sunds Sogn,7451 Sunds,Sunds,
-4711,Linåvængestien,,7451 Sunds,,
+4711,Linåvængestien,,,,
 4712,Linåvænget,Sunds Sogn,7451 Sunds,Sunds,
-4716,Liselundstien,,7451 Sunds,,
+4716,Liselundstien,,,,
 4715,Liselundvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 4728,Ljørringvej,,,,Sinding
 1447,Logistikvej,Gjellerup Sogn,7400 Herning,Hammerum,
@@ -880,31 +880,31 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 611,Lundgaardsgade,Aulum Sogn,7490 Aulum,Aulum,
 613,Lundholmvej,Haderup Sogn,7470 Karup J,Haderup,Egelund
 4800,Lundhuse,Gjellerup Sogn,7400 Herning,Hammerum,Nybo
-4802,Lund Møllestien,,7400 Herning,,
+4802,Lund Møllestien,,,,
 4805,Lundvej,Gjellerup Sogn,7400 Herning,Hammerum,
 4820,Lupinens Kvarter,Gullestrup Sogn,7400 Herning,Gullestrup,Engbyen
 1458,Lupinstien,Skt Johannes Sogn,7400 Herning,Herning,
 617,Lupinvænget,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
-1452,Lustrupvej,,7280 Sønder Felding,,
+1452,Lustrupvej,,,,
 4485,L.V. Bircks Vej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 620,Lyager,Assing Sogn,6933 Kibæk,Kibæk,
 4856,Lykkesvej,Skt Johannes Sogn,7400 Herning,Herning,
 4857,Lyngborgvej,Haunstrup Sogn,7400 Herning,Snejbjerg,Haunstrup
 624,Lyngen,Aulum Sogn,7490 Aulum,Aulum,
 4858,Lyngens Kvarter,Gullestrup Sogn,7400 Herning,Gullestrup,
-4862,Lyngheden,,7400 Herning,,
+4862,Lyngheden,,,,
 627,Lyngholmsvej,Ilderhede Sogn,,Sdr. Felding,
 4859,Lyngshuse,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 628,Lyngskrænten,Haderup Sogn,7540 Haderup,Haderup,
 629,Lyngtoften,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 4860,Lyngvej,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
-1450,Lysgårdstien,,7400 Herning,,
+1450,Lysgårdstien,,,,
 632,Lysgård Søvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 635,Lysgårdvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 4867,Lyshøjen,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 636,Lystlundvej,Vind Sogn,6990 Ulfborg,Vind,Vind
 4885,Lyøvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-4888,Læhegnet,,7400 Herning,,
+4888,Læhegnet,,,,
 1469,Lærkereden,Hedeager Sogn,7400 Herning,Herning,
 4895,Lærkeskovvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
 1380,Lærketoften,Timring Sogn,7480 Vildbjerg,Timring,
@@ -959,11 +959,11 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 664,Mindsvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 669,Moesgårdvej,Vinding Sogn,7550 Sørvad,Vinding,
 5165,Momhøjvej,Studsgård Sogn,7400 Herning,Studsgård,Studsgård
-5166,Momhøjvejs P Plads,,7400 Herning,,
+5166,Momhøjvejs P Plads,,,,
 5167,Momhøjvænget,Studsgård Sogn,7400 Herning,Studsgård,Studsgård
 5172,Monradsgade,Herning Sogn,7400 Herning,Herning,
 671,Morbærhaven,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
-1574,Morgenfruevej,,7480 Vildbjerg,,
+1574,Morgenfruevej,,,,
 672,Mosegaardsvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 674,Mosevej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 677,Mosevænget,Aulum Sogn,7490 Aulum,Aulum,
@@ -971,12 +971,12 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 5219,Mozartsvej,Hedeager Sogn,7400 Herning,Herning,
 5250,Munkgårdkvarteret,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 5253,Munkgårds Alle,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
-5251,Munkgårdstien,,7400 Herning,,
+5251,Munkgårdstien,,,,
 5252,Munkgårdvænget,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 5255,Museumsgade,Herning Sogn,7400 Herning,Herning,
-5257,Museumsgades P Pl,,7400 Herning,,
+5257,Museumsgades P Pl,,,,
 5266,Mylius Erichsens Vej,Herning Sogn,7400 Herning,Herning,
-1567,Myntevej,,7400 Herning,,
+1567,Myntevej,,,,
 683,Mølgårdvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 684,Mølholmvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 687,Møllebakken,Timring Sogn,7480 Vildbjerg,Timring,Timring
@@ -985,9 +985,9 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 689,Mølledamsvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 695,Møllegade,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 5301,Møllegade,,7400 Herning,Herning,
-5304,Møllegades P Plads,,7400 Herning,,
+5304,Møllegades P Plads,,,,
 691,Møllegaarden,Assing Sogn,6933 Kibæk,Kibæk,
-1420,Møllegaardsstien,,6933 Kibæk,,
+1420,Møllegaardsstien,,,,
 693,Møllegaardsvej,Assing Sogn,6933 Kibæk,Kibæk,
 1539,Møllehøj,Skt Johannes Sogn,7400 Herning,Herning,
 5315,Møllekrogen,Sunds Sogn,7451 Sunds,Sunds,
@@ -1021,8 +1021,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 730,Nedre Bukkjærvej,Assing Sogn,6933 Kibæk,Kibæk,
 5407,Neksøvej,Herning Sogn,7400 Herning,Herning,
 5419,Niels Bohrs Vej,Herning Sogn,7400 Herning,Herning,
-1511,Niels Holst-S. Plads,,7400 Herning,,
-1502,Niels Mouritsens Pl,,7400 Herning,,
+1511,Niels Holst-S. Plads,,,,
+1502,Niels Mouritsens Pl,,,,
 731,Niels Mouritsens Vej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 5430,Niels W. Gades Vej,Hedeager Sogn,7400 Herning,Herning,
 1484,Nis Petersens Gård,Herning Sogn,7400 Herning,Herning,
@@ -1033,14 +1033,14 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 5456,Nordlysvej,Sunds Sogn,7451 Sunds,Sunds,
 1393,Nordmarken,Sunds Sogn,7451 Sunds,Sunds,
 5460,Nordpassagen,Sunds Sogn,7451 Sunds,Sunds,
-5459,Nordre Kirkegårdstie,,7451 Sunds,,
+5459,Nordre Kirkegårdstie,,,,
 5461,Nordringen,Sunds Sogn,7451 Sunds,Sunds,
 1527,Nordskrænten,Gullestrup Sogn,7400 Herning,Gullestrup,Gullestrup
 5462,Nordstien,Sunds Sogn,7451 Sunds,Sunds,
 5463,Nordstjernevej,Sunds Sogn,7451 Sunds,Sunds,
 5464,Nordsøvej,Sunds Sogn,7451 Sunds,Sunds,
 732,Nordtoften,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
-5466,Nordveststien,,6973 Ørnhøj,,
+5466,Nordveststien,,,,
 5465,Nordvænget,Sunds Sogn,7451 Sunds,Sunds,
 733,Norgesvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 5477,Norgesvej,Skt Johannes Sogn,7400 Herning,Herning,
@@ -1067,10 +1067,10 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 5609,Nygades P Plads,Herning Sogn,7400 Herning,Herning,
 5545,Ny Gjellerupvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 5598,Nygårdparken,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-5599,Nygårdparkstien,,7400 Herning,,
+5599,Nygårdparkstien,,,,
 758,Nygårdsvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 759,Nygårdvej,Haderup Sogn,7540 Haderup,Haderup,
-1541,Nyhavn,,7540 Haderup,,
+1541,Nyhavn,,,,
 760,Nylandsvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 5548,Ny Møllevej,Skt Johannes Sogn,7400 Herning,Herning,
 5635,Nyskovvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
@@ -1083,11 +1083,11 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 5655,Nøddekrogen,Sunds Sogn,7451 Sunds,Sunds,
 5660,Nøddevej,Sunds Sogn,7451 Sunds,Sunds,
 5665,Nørgaards Alle,Herning Sogn,7400 Herning,Herning,
-5668,Nørgaardstien,,7400 Herning,,
+5668,Nørgaardstien,,,,
 765,Nørhedevej,,6973 Ørnhøj,,Vind
-5698,Nørholmstien,,6973 Ørnhøj,,
+5698,Nørholmstien,,,,
 5700,Nørholmvej,Herning Sogn,7400 Herning,Herning,
-5702,Nørholmvejs P Plads,,7400 Herning,,
+5702,Nørholmvejs P Plads,,,,
 5720,Nørlundvej,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 766,Nørre Alle,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 767,Nørre Alle,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
@@ -1096,7 +1096,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 771,Nørregade,Haderup Sogn,7540 Haderup,Haderup,
 772,Nørregade,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 5735,Nørregade,Herning Sogn,7400 Herning,Herning,
-5738,Nørregade Skole P Pl,,7400 Herning,,
+5738,Nørregade Skole P Pl,,,,
 776,Nørreholmvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 5730,Nørre Lindbjerg,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 5825,Nørremarkvej,Sunds Sogn,7451 Sunds,Sunds,
@@ -1104,7 +1104,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 5855,Nørretanderupvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 5865,Nørretoften,Rind Sogn,7400 Herning,Lind,Lind
 5868,Nørretorp,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-5869,Nørretorpstien,,7400 Herning,,
+5869,Nørretorpstien,,,,
 5870,Nørrevang,Sunds Sogn,7451 Sunds,Sunds,
 777,Nørrevænget,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 5875,Nørreåvej,Sunds Sogn,7451 Sunds,Sunds,Linå
@@ -1133,17 +1133,17 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 797,Over Høstrupvej,Haderup Sogn,7540 Haderup,Haderup,
 798,Over Silstrupvej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 804,Overtarpvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
-1521,Over Åen,,7280 Sønder Felding,,
+1521,Over Åen,,,,
 5994,Paghs Alle,Skt Johannes Sogn,7400 Herning,Herning,
 6005,Palle Fløes Vej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-6007,Palle Fløes Vejs P P,,7400 Herning,,
+6007,Palle Fløes Vejs P P,,,,
 6017,Palleshøj,Rind Sogn,7400 Herning,Lind,Lind
 812,Park Alle,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 813,Parkvej,Aulum Sogn,7490 Aulum,Aulum,
 6029,Parkvej,Fredens Sogn,7400 Herning,Herning,
 6060,Pedersgårdvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 814,Peder Strikkers Gård,Assing Sogn,6933 Kibæk,Kibæk,
-1565,Perikonvej,,6933 Kibæk,,
+1565,Perikonvej,,,,
 1549,Pilebakken,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 6080,Pilevej,Sunds Sogn,7451 Sunds,Sunds,
 816,Pilhusevej,Grove Sogn,7540 Haderup,Haderup,Grove
@@ -1157,13 +1157,13 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6146,Porsvænget,Hedeager Sogn,7400 Herning,Herning,
 824,Postgården,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 6158,Postkrogen,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
-6167,Poulsens Plads,,7400 Herning,,
+6167,Poulsens Plads,,,,
 6169,Poulsgade,Fredens Sogn,7400 Herning,Herning,
 826,Præstebakken,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 827,Præstebakken,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 829,Præstegårdsvej,Timring Sogn,7480 Vildbjerg,Timring,Timring
 6205,Præstegårdvej,Sunds Sogn,7451 Sunds,Sunds,
-6206,Præstegårdvejs P Pl,,7451 Sunds,,
+6206,Præstegårdvejs P Pl,,,,
 6207,Præstegårdvænget,Sunds Sogn,7451 Sunds,Sunds,
 6210,Præstehaven,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 6216,Præstelunden,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
@@ -1172,7 +1172,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 834,Præstevænget,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 835,Præstevænget,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 6228,Præstevænget,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
-1421,Præstevængetstien,,7400 Herning,,
+1421,Præstevængetstien,,,,
 6240,Præstøvej,Fredens Sogn,7400 Herning,Herning,
 837,Pugdalvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 838,Pugdalvænget,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
@@ -1188,7 +1188,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6279,Ravnsbjerg Krat,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 6280,Ravnsbjerg Mark,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 6281,Ravnsbjerg Skov,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-6284,Ravnsbjergstien,,7400 Herning,,
+6284,Ravnsbjergstien,,,,
 6282,Ravnsbjerg Toft,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 6283,Ravnsbjergvej,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 6287,Ravnsborggade,Fredens Sogn,7400 Herning,Herning,
@@ -1201,7 +1201,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 845,Rich.R. Nielsens Vej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 847,Riisvej,Timring Sogn,7480 Vildbjerg,Timring,
 6355,Rimmerhusvej,Haunstrup Sogn,7400 Herning,Snejbjerg,Haunstrup
-6377,Rind Kirke P Plads,,7400 Herning,,
+6377,Rind Kirke P Plads,,,,
 6375,Rind Kirkevej,Rind Sogn,7400 Herning,Lind,Lind
 6380,Rind Plantagevej,Rind Sogn,7400 Herning,Lind,Lind
 1495,Rind Å Engen,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
@@ -1224,7 +1224,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6515,Rosmosevej,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 6521,Rossinisvej,Hedeager Sogn,7400 Herning,Herning,
 859,Rotvigvej,Aulum Sogn,7490 Aulum,Aulum,Hodsager
-860,Rugbjergstien,,7490 Aulum,,
+860,Rugbjergstien,,,,
 861,Rugbjergvej,Aulum Sogn,7490 Aulum,Aulum,
 6533,Rughaven,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 6540,Rugmarken,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
@@ -1239,12 +1239,12 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6568,Rødbyvej,Herning Sogn,7400 Herning,Herning,
 872,Røddinglundvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 873,Røddingvej,,7480 Vildbjerg,,
-1444,Rødding Å Stien,,7480 Vildbjerg,,
+1444,Rødding Å Stien,,,,
 6575,Rødkløvervej,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 6580,Rødtjørnvej,Skt Johannes Sogn,7400 Herning,Herning,
 6598,Røjenvej,,7451 Sunds,,
 948,Røjkærvej,Vind Sogn,7500 Holstebro,Vind,Vind
-1575,Røllikevej,,7500 Holstebro,,
+1575,Røllikevej,,,,
 6603,Rømøvej,Skt Johannes Sogn,7400 Herning,Herning,
 876,Rønne Alle,Assing Sogn,6933 Kibæk,Kibæk,
 6627,Rønne Alle,Sunds Sogn,7451 Sunds,Sunds,
@@ -1264,7 +1264,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6692,Sammelstedvej,Ørre-Sinding Sogn,7400 Herning,Sinding,Ørre
 6697,Samsøvej,Skt Johannes Sogn,7400 Herning,Herning,
 6709,Sandagervej,Skt Johannes Sogn,7400 Herning,Herning,
-1485,Sandalmagerens Gade,,7400 Herning,,
+1485,Sandalmagerens Gade,,,,
 6720,Sandbækvej,Studsgård Sogn,7400 Herning,Studsgård,Tanderupkær
 889,Sandetvej,,,Sdr. Felding,Sandet
 894,Sandfeld Alle,Assing Sogn,6933 Kibæk,Kibæk,
@@ -1291,7 +1291,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6897,Silkeborgvej,,7400 Herning,,Birk
 908,Silstrupvej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 6915,Simmelkær Hovedgade,Simmelkær Sogn,7451 Sunds,Simmelkær,Simmelkær
-6918,Simmelkær Torvs P Pl,,7451 Sunds,,
+6918,Simmelkær Torvs P Pl,,,,
 6922,Simmelkærvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
 6946,Sindinggårdvej,,7400 Herning,Sinding,Sinding
 6950,Sinding Hovedgade,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
@@ -1300,11 +1300,11 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 6953,Siøvej,Fredens Sogn,7400 Herning,Herning,
 911,Sjællandsgade,Aulum Sogn,7490 Aulum,Aulum,
 6955,Sjællandsgade,,7400 Herning,Herning,
-6967,Skalmejeskolestien,,7400 Herning,,
-6968,Skalmejestien,,7400 Herning,,
+6967,Skalmejeskolestien,,,,
+6968,Skalmejestien,,,,
 6970,Skalmejevej,Sunds Sogn,7451 Sunds,Sunds,
 913,Skarrild Overbyvej,,6933 Kibæk,,Skarrild
-1545,Skautrupvej,,6933 Kibæk,,
+1545,Skautrupvej,,,,
 918,Skavevej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 6980,Skellundvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 6992,Skibbildparken,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,Skibbild
@@ -1316,32 +1316,32 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 934,Skjernvej,,,,Skarrild
 935,Skjernvej,,,,
 7026,Skjernvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
-1453,Skjoldpladsen,,7400 Herning,,
+1453,Skjoldpladsen,,,,
 936,Skjoldsvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,Skibbild
 7040,Skolebakken,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 941,Skolegade,Aulum Sogn,7490 Aulum,Aulum,
 942,Skolegade,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 944,Skolegade,Vinding Sogn,7550 Sørvad,Vinding,
 7049,Skolegade,Herning Sogn,7400 Herning,Herning,
-1408,Skolegade P Plads,,7400 Herning,,
-7051,Skolegades P Plads,,7400 Herning,,
+1408,Skolegade P Plads,,,,
+7051,Skolegades P Plads,,,,
 1498,Skoleparken,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 947,Skolestien,Feldborg Sogn,7540 Haderup,Feldborg,Feldborg
 7088,Skolesvinget,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
-7089,Skolesvingets P Pl,,7400 Herning,,
+7089,Skolesvingets P Pl,,,,
 7090,Skoletoften,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 949,Skolevejen,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 951,Skolevænget,Haderup Sogn,7540 Haderup,Haderup,
 953,Skolevænget,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 7108,Skolevænget,Rind Sogn,7400 Herning,Lind,Lind
-7110,Skolevængets P Plads,,7400 Herning,,
+7110,Skolevængets P Plads,,,,
 7115,Skomagerbakken,,7400 Herning,,
 7117,Skovbakken,Gullestrup Sogn,7400 Herning,Gullestrup,Gullestrup
 7119,Skovbjerg Alle,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 7121,Skovbjergengen,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 959,Skovbjergvej,,,,
 7122,Skovbjergvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
-1405,Skovbjergvej P Plads,,7400 Herning,,
+1405,Skovbjergvej P Plads,,,,
 7123,Skovbjergvænget,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 962,Skovbrynet,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 963,Skovbrynet,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
@@ -1368,13 +1368,13 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 7210,Skærgårdvej,,7400 Herning,Lind,Skærbæk
 7255,Skåphusvej,,7451 Sunds,Ilskov,Ilskov
 7272,Slagelsegade,Fredens Sogn,7400 Herning,Herning,
-1385,Sleipners Plads,,7400 Herning,,
+1385,Sleipners Plads,,,,
 7283,Slumstrupvej,Kollund Sogn,7400 Herning,Lind,Skærbæk
 7260,Slåenvej,Skt Johannes Sogn,7400 Herning,Herning,
 7296,Smallegade,Herning Sogn,7400 Herning,Herning,
 987,Smedegade,Aulum Sogn,7490 Aulum,Aulum,
 7307,Smedegade,Herning Sogn,7400 Herning,Herning,
-7309,Smedegades P Plads,,7400 Herning,,
+7309,Smedegades P Plads,,,,
 7335,Smedegårdvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 988,Smedevej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 990,Smækbjergvej,Timring Sogn,7480 Vildbjerg,Timring,
@@ -1416,13 +1416,13 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1016,Spegbjergvej,Aulum Sogn,7490 Aulum,Aulum,
 7509,Spinkebjerg,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 1530,Spinkebjergparken,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-7508,Spinkebjergstien,,7400 Herning,,
+7508,Spinkebjergstien,,,,
 1017,Sports Alle,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 7510,Sportsvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
 7518,Sprogøvej,Fredens Sogn,7400 Herning,Herning,
-1473,Spurvereden,,7400 Herning,,
+1473,Spurvereden,,,,
 7525,Spurvevej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-7529,Spøttrupstien,,7400 Herning,,
+7529,Spøttrupstien,,,,
 7530,Spøttrupvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 1019,Spåbækvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 1021,Stadion Alle,Ilderhede Sogn,7270 Stakroge,Sdr. Felding,
@@ -1434,7 +1434,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1031,Stavlundvej,,7540 Haderup,Haderup,
 7542,St. Blichers Gade,Herning Sogn,7400 Herning,Herning,
 7545,St. Blichersvænget,Fredens Sogn,7400 Herning,Herning,
-1578,Steensgård Kvarteret,,7400 Herning,,
+1578,Steensgård Kvarteret,,,,
 7626,Stenbjergkvarteret,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 1378,Stenbjergparken,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 7636,Stenhøjen,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
@@ -1455,18 +1455,18 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 7741,Straussvej,Hedeager Sogn,7400 Herning,Herning,
 7753,Strynøvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1038,Strøget,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
-1403,Strøget P Plads,,7280 Sønder Felding,,
-7754,Studsgård Kirke P Pl,,7280 Sønder Felding,,
-7755,Studsgård Skole P Pl,,7280 Sønder Felding,,
-7757,Studsgårdstien,,7280 Sønder Felding,,
+1403,Strøget P Plads,,,,
+7754,Studsgård Kirke P Pl,,,,
+7755,Studsgård Skole P Pl,,,,
+7757,Studsgårdstien,,,,
 7776,Studsgårdvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,
 7780,Sunds Hovedgade,Sunds Sogn,7451 Sunds,Sunds,
-7781,Sunds Hovedgades P P,,7451 Sunds,,
-7782,Sunds Kirke P Plads,,7451 Sunds,,
-7783,Sunds Kirkesti,,7451 Sunds,,
+7781,Sunds Hovedgades P P,,,,
+7782,Sunds Kirke P Plads,,,,
+7783,Sunds Kirkesti,,,,
 1398,Sunds Omfartsvej,Sunds Sogn,7451 Sunds,Sunds,
-7788,Sunds Sø,,7451 Sunds,,
-7790,Sunds Torve P Plads,,7451 Sunds,,
+7788,Sunds Sø,,,,
+7790,Sunds Torve P Plads,,,,
 7792,Sundsvej,,,,Nybo
 7800,Susåvej,Hedeager Sogn,7400 Herning,Herning,
 1471,Svalereden,Hedeager Sogn,7400 Herning,Herning,
@@ -1486,10 +1486,10 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 9962,Særlig Adressebeskyt,Ukendt (Sogn),9999 Ukendt,Ukendt (Valg),
 1514,Søbakken,Sunds Sogn,7451 Sunds,Sunds,
 8046,Søbylundvej,Kølkær Sogn,7400 Herning,Kølkær,
-8048,Søby Sø,,7400 Herning,,
+8048,Søby Sø,,,,
 8055,Søbysøvej,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 8056,Søengen,Sunds Sogn,7451 Sunds,Sunds,
-8057,Søglimtstien,,7451 Sunds,,
+8057,Søglimtstien,,,,
 8060,Søgårdvej,Sunds Sogn,7451 Sunds,Sunds,
 1525,Søhaven,Sunds Sogn,7451 Sunds,Sunds,
 1512,Sølunden,Sunds Sogn,7451 Sunds,Sunds,
@@ -1513,13 +1513,13 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1058,Søndergaardparken,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 1059,Søndergaardsvej,Skarrild Sogn,6933 Kibæk,Skarrild,Skarrild
 8186,Sønderkær,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-8188,Sønderkærstien,,7400 Herning,,
+8188,Sønderkærstien,,,,
 1072,Sønderkærvej,Assing Sogn,6933 Kibæk,Kibæk,
 8107,Sønder Lindbjerg,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-8108,Sønder Lindbjerg St,,7400 Herning,,
+8108,Sønder Lindbjerg St,,,,
 1073,Søndermarken,Aulum Sogn,7490 Aulum,Aulum,
 8195,Søndermarken,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-1074,Søndermarkstien,,7400 Herning,,
+1074,Søndermarkstien,,,,
 1075,Søndermarksvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 1492,Sønder Næstholtvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Gødstrup
 1077,Sønderparken,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
@@ -1534,8 +1534,8 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1553,Søster Anes Gade,Herning Sogn,7400 Herning,Herning,
 1554,Søster Fannys Gade,Herning Sogn,7400 Herning,Herning,
 8225,Søstien,Sunds Sogn,7451 Sunds,Sunds,
-8227,Søstien Vest,,7451 Sunds,,
-8229,Søstien Øst,,7451 Sunds,,
+8227,Søstien Vest,,,,
+8229,Søstien Øst,,,,
 8235,Søtoften,Sunds Sogn,7451 Sunds,Sunds,
 8250,Søvndalvej,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 8251,Søvænget,Sunds Sogn,7451 Sunds,Sunds,
@@ -1544,7 +1544,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 8290,Tanderupkærvej,,7400 Herning,,
 8291,Tanderup Mark,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 8293,Tanderupvej,,7400 Herning,,
-8295,Tanderupvejs P Pl,,7400 Herning,,
+8295,Tanderupvejs P Pl,,,,
 1376,Tangsøparken,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1088,Tarpvej,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
 1089,Taterbakkevej,Feldborg Sogn,7540 Haderup,,
@@ -1554,9 +1554,9 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1543,Tavlund Krat,Rind Sogn,7400 Herning,Lind,Lind
 1523,Tavlundparken,Rind Sogn,7400 Herning,Lind,Lind
 8305,Tavlundvej,,7400 Herning,Lind,Lind
-8308,Teglgårdstien,,7400 Herning,,
+8308,Teglgårdstien,,,,
 8310,Teglgårdvej,Sunds Sogn,7451 Sunds,Sunds,
-1556,Teglhaven,,7451 Sunds,,
+1556,Teglhaven,,,,
 8316,Teglvænget,Skt Johannes Sogn,7400 Herning,Herning,
 1518,Teglværks Lunden,Skt Johannes Sogn,7400 Herning,Herning,
 1093,Teglværksvej,Feldborg Sogn,7540 Haderup,Feldborg,Feldborg
@@ -1578,22 +1578,22 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1117,Tiphedevej,,7480 Vildbjerg,Timring,
 8469,Tjaikofskisvej,Hedeager Sogn,7400 Herning,Herning,
 8480,Tjelevej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
-8482,Tjelevejstien,,7400 Herning,,
-1576,Tjørnebakken,,7400 Herning,,
-8485,Tjørnesletten,,7400 Herning,,
+8482,Tjelevejstien,,,,
+1576,Tjørnebakken,,,,
+8485,Tjørnesletten,,,,
 1118,Tjørnevej,Haderup Sogn,7540 Haderup,Haderup,
 8492,Tjørnevej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 8510,Tjørring Hovedgade,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
-8511,Tjørring Hovedg P Pl,,7400 Herning,,
+8511,Tjørring Hovedg P Pl,,,,
 8513,Tjørringparken,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
-1451,Tjørring Skolesti,,7400 Herning,,
+1451,Tjørring Skolesti,,,,
 1494,Tjørring Vænget,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 8515,Toftager,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 8520,Toftbjerg,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 8539,Toftegårdvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1119,Toften,Assing Sogn,6933 Kibæk,Kibæk,
 8562,Toften,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
-1121,Toftestien,,7400 Herning,,
+1121,Toftestien,,,,
 1122,Toftevej,Aulum Sogn,7490 Aulum,Aulum,
 1123,Toftvej,,,,
 1124,Tohøje,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
@@ -1601,27 +1601,27 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 8568,Tolstedhaven,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 1379,Tolstedhøjen,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
 8570,Tolstedparken,Gjellerup Sogn,7400 Herning,Hammerum,Gjellerup
-8571,Tolstedparkstien,,7400 Herning,,
-8569,Tolstedstien,,7400 Herning,,
+8571,Tolstedparkstien,,,,
+8569,Tolstedstien,,,,
 8572,Tolstedvej,Gjellerup Sogn,7400 Herning,Hammerum,
 1125,Toppergårdvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 8573,Tornebuskvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 8578,Tornvigvej,,7400 Herning,Arnborg,Arnborg
 1127,Torstedvej,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 1128,Torvegade,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
-1402,Torvegade P Plads,,7280 Sønder Felding,,
+1402,Torvegade P Plads,,,,
 8597,Torvet,Herning Sogn,7400 Herning,Herning,
 8610,Tosmosevej,Ørre-Sinding Sogn,7400 Herning,Sinding,Ørre
 8615,Tothøjvej,,7400 Herning,,
-1532,Toudalvej,,7400 Herning,,
+1532,Toudalvej,,,,
 8633,Toustrupvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 8650,Trafikskolevej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
 1129,Tranebærvej,Vind Sogn,7500 Holstebro,Vind,Vind
-8654,Tranekærstien,,7500 Holstebro,,
+8654,Tranekærstien,,,,
 8656,Tranekærvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 1130,Tranevej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 8660,Tranevej,Sunds Sogn,7451 Sunds,Sunds,
-8662,Tranevejstien,,7451 Sunds,,
+8662,Tranevejstien,,,,
 1133,Tranholmvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 1448,Transportbuen,Gjellerup Sogn,7400 Herning,Hammerum,
 1445,Transportcenter Alle,Gjellerup Sogn,7400 Herning,Hammerum,
@@ -1671,7 +1671,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1174,Valmuevej,Aulum Sogn,7490 Aulum,Aulum,
 1176,Vardevej,,,,
 8856,Vardevej,,7400 Herning,,Nr Vejen
-1415,Vardevej P Plads,,7400 Herning,,
+1415,Vardevej P Plads,,,,
 1181,Varhedevej,Aulum Sogn,7490 Aulum,Aulum,
 8860,Ved Banen,Fasterholt Sogn,7330 Brande,Arnborg,Fasterholt
 1182,Ved Hegnet,Haderup Sogn,7540 Haderup,Haderup,
@@ -1681,10 +1681,10 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1227,Vejlgaardvej,Assing Sogn,6933 Kibæk,Kibæk,
 1230,Velhustedparken,Assing Sogn,6933 Kibæk,Kibæk,
 1237,Velhustedvej,Assing Sogn,6933 Kibæk,Kibæk,
-1414,Velhustedvej P Plads,,6933 Kibæk,,
+1414,Velhustedvej P Plads,,,,
 8903,Verdisvej,Hedeager Sogn,7400 Herning,Herning,
 1239,Vestager,Aulum Sogn,7490 Aulum,Aulum,
-8946,Vesteragerstien,,7490 Aulum,,
+8946,Vesteragerstien,,,,
 8949,Vesteragervej,Hedeager Sogn,7400 Herning,Herning,
 1244,Vester Alle,Assing Sogn,6933 Kibæk,Kibæk,
 8926,Vester Alle,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
@@ -1702,11 +1702,11 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 9079,Vesterholmvej,,7400 Herning,Tjørring,
 1257,Vesterled,Ørnhøj Sogn,6973 Ørnhøj,Ørnhøj,
 9090,Vesterled,Rind Sogn,7400 Herning,Lind,Lind
-9092,Vesterlindstien,,7400 Herning,,
+9092,Vesterlindstien,,,,
 8797,Vesterlindvej,Rind Sogn,7400 Herning,Lind,Lind
 1258,Vesterlund,Aulum Sogn,7490 Aulum,Aulum,
 9097,Vestermarken,,7400 Herning,,
-9099,Vestermarkens P Pl,,7400 Herning,,
+9099,Vestermarkens P Pl,,,,
 9103,Vestermosevej,Ørre-Sinding Sogn,7400 Herning,Sinding,Ørre
 9110,Vesterskovvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
 9112,Vestertoften,Rind Sogn,7400 Herning,Lind,Lind
@@ -1770,7 +1770,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 9489,Weysesvej,Hedeager Sogn,7400 Herning,Herning,
 9495,Ydertoften,Rind Sogn,7400 Herning,Lind,Lind
 9501,Ydunsvej,,7400 Herning,Herning,
-1396,Yllebjerg Parken,,7400 Herning,,
+1396,Yllebjerg Parken,,,,
 1314,Yllebjergvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 1315,Æblehaven,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 9513,Ærøvej,Gjellerup Sogn,7400 Herning,Hammerum,Hammerum
@@ -1784,7 +1784,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 9538,Ørre Byvej,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 1329,Ørrevej,Aulum Sogn,7490 Aulum,Aulum,
 9550,Ørrevej,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
-9551,Ørrevængestien,,7400 Herning,,
+9551,Ørrevængestien,,,,
 9554,Ørrevænget,Ørre-Sinding Sogn,7400 Herning,Sinding,Sinding
 1436,Ørskovbakken,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 9565,Ørskovvej,Snejbjerg Sogn,7400 Herning,Snejbjerg,
@@ -1797,12 +1797,12 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1339,Østergade,Assing Sogn,6933 Kibæk,Kibæk,
 1341,Østergade,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 9665,Østergade,Herning Sogn,7400 Herning,Herning,
-1410,Østergade P Plads Nv,,7400 Herning,,
-1411,Østergade P Plads Sø,,7400 Herning,,
+1410,Østergade P Plads Nv,,,,
+1411,Østergade P Plads Sø,,,,
 1333,Østergaardsallé,Aulum Sogn,7490 Aulum,Aulum,
 1334,Østergaardsvej,Aulum Sogn,7490 Aulum,Aulum,
 1330,Øster Hedegårdsvej,Assing Sogn,6933 Kibæk,Kibæk,
-1390,Østerholmvej,,6933 Kibæk,,
+1390,Østerholmvej,,,,
 1344,Østerhovedvej,Nøvling Sogn,7480 Vildbjerg,Skibbild/Nøvling,
 9745,Østerled,Snejbjerg Sogn,7400 Herning,Snejbjerg,Snejbjerg
 1490,Østerlindparken,Rind Sogn,7400 Herning,Lind,Lind
@@ -1811,7 +1811,7 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 9750,Østermarken,Kølkær Sogn,7400 Herning,Kølkær,Kølkær
 1429,Øster Momhøjvej,Studsgård Sogn,7400 Herning,Studsgård,Studsgård
 9755,Østerskovvej,Ilskov Sogn,7451 Sunds,Ilskov,Ilskov
-9758,Østerstien,,7451 Sunds,,
+9758,Østerstien,,,,
 1345,Østertoft,Aulum Sogn,7490 Aulum,Aulum,
 9759,Østertoften,Rind Sogn,7400 Herning,Lind,Lind
 9765,Øster Toksvigvej,Arnborg Sogn,7400 Herning,Arnborg,Arnborg
@@ -1828,17 +1828,17 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1381,Åbjergvænget,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 1355,Åbrinken,Vinding Sogn,7550 Sørvad,Vinding,
 1356,Åbyvej,Aulum Sogn,7490 Aulum,Aulum,
-1383,Ådalen,,7490 Aulum,,
+1383,Ådalen,,,,
 1357,Ågårdsvej,Vildbjerg Sogn,7480 Vildbjerg,Vildbjerg,
 9785,Åkandevej,Rind Sogn,7400 Herning,Lind,Høgild
 9789,Åkirkebystien,Herning Sogn,7400 Herning,Herning,
 9790,Åkirkebyvej,Herning Sogn,7400 Herning,Herning,
-9792,Ålholmstien,,7400 Herning,,
+9792,Ålholmstien,,,,
 9794,Ålholmvej,Tjørring Sogn,7400 Herning,Tjørring,Tjørring
 9795,Ålykkevej,Hedeager Sogn,7400 Herning,Herning,
 1359,Åparken,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 1361,Åparken,S Felding Sogn,7280 Sønder Felding,Sdr. Felding,
-1424,Åparkstien,,7280 Sønder Felding,,
+1424,Åparkstien,,,,
 1362,Åskrænten,Haderup Sogn,7540 Haderup,Haderup,
 1364,Åvej,Hodsager Sogn,7490 Aulum,Hodsager,Hodsager
 9798,Åvej,Sunds Sogn,7451 Sunds,Sunds,
@@ -1848,4 +1848,3 @@ ID,Vejnavn,Sogn,Postdistrikt,By,Flække
 1474,Aahaven,Hedeager Sogn,7400 Herning,Herning,
 60,Aaparken,Fredens Sogn,7400 Herning,Herning,
 7,Aavænget,Assing Sogn,6933 Kibæk,Kibæk,
-7,,,6933 Kibæk,,

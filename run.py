@@ -495,12 +495,7 @@ class addressWriter:
             # Lets not declare exception before we've verified it
             exception_match = False
             if exception == Person.streetId:
-                logging.info(
-                    "maybe found exception? \n"
-                    + str(exception)
-                    + " vs Person: \n"
-                    + str(Person)
-                )
+                logging.info("maybe found exception? \n %s \n %s", exception, Person)
                 # from here on, it gets kinda messy, to be honest.
                 # Are we looking at an even streetNo?
                 if (Person.streetNo % 2) == 0:
@@ -516,18 +511,22 @@ class addressWriter:
                         logging.info("exception match on odd/even number")
 
                 else:
-                    logging.debug(exception)
-                    logging.debug(Person)
-
                     # we need to check house numbers and suffices
                     if (
                         Person.streetNo >= exception.exceptionFrom
                         and Person.streetNo <= exception.exceptionTo
                     ):
                         # is this suffix-less?
-                        if Person.streetNoSuffix == "" or (
-                            Person.streetNoSuffix >= exception.exceptionFromSuffix
-                            and Person.streetNoSuffix <= exception.exceptionToSuffix
+                        if (
+                            Person.streetNoSuffix == ""
+                            or (
+                                Person.streetNoSuffix >= exception.exceptionFromSuffix
+                                and Person.streetNoSuffix <= exception.exceptionToSuffix
+                            )
+                            or (
+                                exception.exceptionFromSuffix == ""
+                                and exception.exceptionToSuffix == ""
+                            )
                         ):
                             logging.info("exception match on streetNo")
                             exception_match = True
