@@ -47,6 +47,24 @@ class person:
     careOf: str
 
 
+@dataclass
+class fullPerson:
+    streetId: int
+    streetNo: int
+    streetNoSuffix: str
+    floor: str
+    door: str
+    firstName: str
+    lastName: str
+    occupation: str
+    careOf: str
+    streetName: str
+    parish: str = None
+    postCode: str = None
+    town: str = None
+    district: str = None
+
+
 class addressWriter:
     def __init__(self, input):
         logging.info("will read file: " + input)
@@ -55,6 +73,7 @@ class addressWriter:
         self.streets = []
         self.streetExceptions = []
         self.persons = []
+        self.fullpersons = []
 
     def parsePersons(self):
         for line in self.lines:
@@ -68,8 +87,8 @@ class addressWriter:
                 occupation = " ".join(line[99:114].split())
                 careOf = " ".join(line[114:160].split())
                 streetNo = line[8:11].strip()
-                floor = line[15:17].lower().strip()
-                door = line[20:22].lower().strip()
+                floor = line[14:16].lower().strip()
+                door = line[19:21].lower().strip()
                 streetNoSuffix = line[12].upper().strip()
 
                 logging.debug(
@@ -383,65 +402,78 @@ class addressWriter:
             )
         logging.info("wrote " + str(len(self.streetExceptions)) + " exceptions to file")
 
-    def writePersonsCsv(self, file) -> any:
-        personfile = open(file, "w", newline="")
-        self.personWriter = csv.writer(personfile, dialect="excel")
+    def parseFullPersons(self) -> any:
         if len(self.persons) == 0:
             self.parsePersons()
-        self.personWriter.writerow(
-            [
-                "gadeID",
-                "Efternavn",
-                "Fornavne",
-                "Beskæftigelse",
-                "careOf",
-                "Vejnavn",
-                "Husnr",
-                "etageDør",
-                "PostnrBy",
-                "Flække",
-                "By",
-                "sogn",
-            ]
-        )
+
         for person in self.persons:
-            writePerson = {
-                "streetId": person.streetId,
-                "lastName": person.lastName,
-                "firstName": person.firstName,
-                "occupation": person.occupation,
-                "careOf": person.careOf,
-                "streetNo": person.streetNo,
-                "streetNoSuffix": person.streetNoSuffix,
-                "floor": person.floor,
-                "door": person.door,
-            }
+            writePerson = {}
             self.findStreetAndException(person=person, writePerson=writePerson)
             logging.debug(person)
             logging.info(writePerson)
-            if len(writePerson) < 5:
+            if len(writePerson) < 2:
                 logging.error("No street info found, exiting for person:")
                 logging.error(writePerson)
                 logging.error(person)
                 quit()
 
-            self.personWriter.writerow(
+            personToSave = fullPerson(
+                streetId=person.streetId,
+                lastName=person.lastName,
+                firstName=person.firstName,
+                occupation=person.occupation,
+                careOf=person.careOf,
+                streetNo=person.streetNo,
+                streetNoSuffix=person.streetNoSuffix,
+                floor=person.floor,
+                door=person.door,
+                streetName=writePerson["streetName"],
+                parish=writePerson["parish"],
+                postCode=writePerson["postCode"],
+                town=writePerson["town"],
+                district=writePerson["district"],
+            )
+            self.fullpersons.append(personToSave)
+
+    def writePersonsCsv(self, file) -> any:
+        personfile = open(file, "w", newline="")
+        personWriter = csv.writer(personfile, dialect="excel")
+        if len(self.fullpersons) == 0:
+            self.parseFullPersons()
+            personWriter.writerow(
                 [
-                    writePerson["streetId"],
-                    writePerson["lastName"],
-                    writePerson["firstName"],
-                    writePerson["occupation"],
-                    writePerson["careOf"],
-                    writePerson["streetName"],
-                    str(writePerson["streetNo"]) + str(writePerson["streetNoSuffix"]),
-                    str(writePerson["floor"]) + str(writePerson["door"]),
-                    writePerson["postCode"],
-                    writePerson["district"],
-                    writePerson["town"],
-                    writePerson["parish"],
+                    "gadeID",
+                    "Efternavn",
+                    "Fornavne",
+                    "Beskæftigelse",
+                    "careOf",
+                    "Vejnavn",
+                    "Husnr",
+                    "etageDør",
+                    "PostnrBy",
+                    "Flække",
+                    "By",
+                    "sogn",
                 ]
             )
-        logging.info("wrote " + str(len(self.persons)) + " persons to file")
+            for writePerson in self.fullpersons:
+                personWriter.writerow(
+                    [
+                        writePerson.streetId,
+                        writePerson.lastName,
+                        writePerson.firstName,
+                        writePerson.occupation,
+                        writePerson.careOf,
+                        writePerson.streetName,
+                        str(writePerson.streetNo) + str(writePerson.streetNoSuffix),
+                        str(writePerson.floor) + " " + str(writePerson.door),
+                        writePerson.postCode,
+                        writePerson.district,
+                        writePerson.town,
+                        writePerson.parish,
+                    ]
+                )
+            logging.info("wrote " + str(len(self.fullpersons)) + " persons to file")
 
     def findStreetAndException(self, person, writePerson):
         if len(self.streetExceptions) == 0:
