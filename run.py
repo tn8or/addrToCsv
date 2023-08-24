@@ -494,7 +494,7 @@ class addressWriter:
         ## go searching through exceptions to see if we have an override
         for exception in self.streetExceptions:
             # Lets not declare exception before we've verified it
-            exceptionMatch = False
+            exception_match = False
             if exception == Person.streetId:
                 logging.info(
                     "maybe found exception? \n"
@@ -513,8 +513,8 @@ class addressWriter:
                 if exception.exceptionFrom == None and exception.exceptionTo == None:
                     # No need to match house numbers - check if the even-ness is the same:
                     if evenNumber == exception.evenNumbers:
-                        exceptionMatch = True
-                        logging.info("Exception Matched")
+                        exception_match = True
+                        logging.info("exception match on odd/even number")
 
                 else:
                     logging.debug(exception)
@@ -530,23 +530,26 @@ class addressWriter:
                             Person.streetNoSuffix >= exception.exceptionFromSuffix
                             and Person.streetNoSuffix <= exception.exceptionToSuffix
                         ):
-                            logging.info("exception match")
-                            exceptionMatch = True
+                            logging.info("exception match on streetNo")
+                            exception_match = True
 
-                if exceptionMatch == True:
+                if exception_match:
                     # create variable based on the kind of exception
                     if exception.exceptionType == "parish":
                         logging.info("replaced parish from exception")
                         writePerson["parish"] = exception.exceptionValue
-                    if exception.exceptionType == "district":
+                    elif exception.exceptionType == "district":
                         logging.info("replaced parish from exception")
                         writePerson["district"] = exception.exceptionValue
-                    if exception.exceptionType == "postcode":
+                    elif exception.exceptionType == "postCode":
                         logging.info("replaced postcode from exception")
-                        writePerson["postcode"] = exception.exceptionValue
-                    if exception.exceptionType == "town":
+                        writePerson["postCode"] = exception.exceptionValue
+                    elif exception.exceptionType == "town":
                         logging.info("replaced town from exception")
                         writePerson["town"] = exception.exceptionValue
+                    else:
+                        logging.error("Exception matched, but not replaced!")
+                        quit()
 
 
 logging.basicConfig(
