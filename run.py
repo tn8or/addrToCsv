@@ -95,21 +95,14 @@ class addressWriter:
                 streetNoSuffix = line[12].upper().strip()
 
                 logging.debug(
-                    "We've got a live one! "
-                    + "streetid"
-                    + streetId
-                    + " houseNo "
-                    + streetNo
-                    + " suffix: "
-                    + streetNoSuffix
-                    + " lastName: "
-                    + lastName
-                    + " firstName: "
-                    + firstName
-                    + " occupation: "
-                    + occupation
-                    + " careof: "
-                    + careOf
+                    "We've got a live one! streetid: %s, streetNo: %s, streetNoSuffix: %s, lastName: %s, firstName: %s, occupation: %s, careOf: %s",
+                    streetId,
+                    streetNo,
+                    streetNoSuffix,
+                    lastName,
+                    firstName,
+                    occupation,
+                    careOf,
                 )
                 newPerson = Person(
                     streetId=int(streetId),
@@ -154,7 +147,7 @@ class addressWriter:
                                 town=town,
                                 district=district,
                             )
-                            logging.debug("added Street " + str(streetObj))
+                            logging.debug("added Street %s", streetObj)
 
                             self.streets.append(streetObj)
                             streetName = None
@@ -200,7 +193,7 @@ class addressWriter:
                         quit()
                 case "04":
                     # town lives here
-                    logging.debug("this line is: " + line)
+                    logging.debug("this line is: %s", line)
                     if curStreet == fields[2]:
                         logging.debug("looking for exceptions")
 
@@ -239,7 +232,7 @@ class addressWriter:
                             town=town,
                             district=district,
                         )
-                        logging.debug("added Street " + str(streetObj))
+                        logging.debug("added Street %s", streetObj)
 
                         self.streets.append(streetObj)
                         streetName = None
@@ -259,7 +252,7 @@ class addressWriter:
                 town=town,
                 district=district,
             )
-            logging.debug("added Street " + str(streetObj))
+            logging.debug("added Street %s", streetObj)
 
             self.streets.append(streetObj)
             streetName = None
@@ -275,7 +268,7 @@ class addressWriter:
         if len(fields) >= 5:
             if fields[4] == "nr":
                 isRange = None
-                logging.debug("exception found " + line)
+                logging.debug("exception found %s", line)
 
                 # set isRange to false, so we can reset it if the try-clause below fails
                 isRange = False
@@ -321,7 +314,7 @@ class addressWriter:
                             evenNumbers=evenNumbers,
                         )
                         self.streetExceptions.append(newException)
-                        logging.debug("added exception " + str(newException))
+                        logging.debug("added exception %s", newException)
                 except:
                     pass
                 if isRange == False:
@@ -336,16 +329,16 @@ class addressWriter:
                         evenNumbers=evenNumbers,
                     )
                     self.streetExceptions.append(newException)
-                    logging.debug("added exception " + str(newException))
+                    logging.debug("added exception %s", newException)
 
             else:
                 value = " ".join(line[12:63].split())
-                logging.debug("No exception, return the value " + value)
+                logging.debug("No exception, return the value %s", value)
                 return value
 
         else:
             value = " ".join(line[12:63].split())
-            logging.debug("No exception, return the value " + value)
+            logging.debug("No exception, return the value %s", value)
             return value
 
     def writeStreetFile(self, file) -> any:
@@ -368,7 +361,7 @@ class addressWriter:
                     Street.district,
                 ]
             )
-        logging.info("wrote " + str(len(self.streets)) + " streets to file")
+        logging.info("wrote %s streets to file", len(self.streets))
 
     def writeStreetExceptions(self, file) -> any:
         exceptionfile = open(file, "w", newline="", encoding="UTF-8")
@@ -403,7 +396,7 @@ class addressWriter:
                     exception.exceptionToSuffix,
                 ]
             )
-        logging.info("wrote " + str(len(self.streetExceptions)) + " exceptions to file")
+        logging.info("wrote %s exceptions to file", len(self.streetExceptions))
 
     def parseFullPersons(self) -> any:
         if len(self.persons) == 0:
@@ -476,14 +469,14 @@ class addressWriter:
                         writePerson.parish,
                     ]
                 )
-            logging.info("wrote " + str(len(self.fullpersons)) + " persons to file")
+            logging.info("wrote %s persons to file", len(self.fullpersons))
 
     def findStreetAndException(self, Person, writePerson):
         if len(self.streetExceptions) == 0:
             self.parseStreets()
         for Street in self.streets:
             if Street == Person.streetId:
-                logging.debug("found Street " + str(Street))
+                logging.debug("found Street %s", Street)
                 writePerson["streetName"] = Street.streetName
                 writePerson["postCode"] = Street.postCode
                 writePerson["town"] = Street.town
@@ -560,7 +553,8 @@ logging.basicConfig(
 parser = argparse.ArgumentParser(
     prog="run.py",
     usage="The -i flag is required (input file). At least one output option is required as well.",
-    description="Will extract persons and streets from the KMD mainframe extract, and store as csv files, for further phonebook formatting",
+    description="Will extract persons and streets from the KMD mainframe extract, \n"
+    + "and store as csv files, for further phonebook formatting",
     add_help=True,
 )
 inputs = parser.add_argument_group("Input arguments", "Required for operation")
@@ -588,7 +582,7 @@ try:
 
 except:
     print(
-        "No inFileName provided - first argument is input-file, second argument is output-file (csv)"
+        "No inFileName provided. First argument is input-file, second argument is output-file (csv)"
     )
     print("The util will append to the file without further questions")
     quit()
