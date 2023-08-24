@@ -134,7 +134,7 @@ class addressWriter:
             fields = line.split()
 
             logging.debug(
-                "at line " + str(lineCount) + " in the file. Field0 is " + fields[0]
+                "at line %s in the file. Field0 is %s", str(lineCount), fields[0]
             )
 
             match fields[0]:
@@ -167,9 +167,7 @@ class addressWriter:
                     # this starts a new Street section
                     curStreet = fields[2]
                     streetName = " ".join(line[12:63].split())
-                    logging.debug(
-                        "streetName: " + streetName + " curstreet: " + curStreet
-                    )
+                    logging.debug("streetName: %s curstreet: %s", streetName, curStreet)
 
                 # All the following cases may have exceptions (house no 1 -> 2, postcode X) -
                 # so for each line, call parseLineForExceptions() which will store the exception in its own dataclass if required
@@ -232,7 +230,7 @@ class addressWriter:
                         quit()
                 case "07":
                     # we're down into persons - so lets store the Street and move on, if there is something to store:
-                    if streetName != None:
+                    if streetName is not None:
                         streetObj = Street(
                             streetId=int(curStreet),
                             streetName=streetName,
@@ -252,23 +250,24 @@ class addressWriter:
                         district = None
 
         # write the last Street to file, even though we're out of the loop
-        streetObj = Street(
-            streetId=int(curStreet),
-            streetName=streetName,
-            postCode=postCode,
-            parish=parish,
-            town=town,
-            district=district,
-        )
-        logging.debug("added Street " + str(streetObj))
+        if streetName is not None:
+            streetObj = Street(
+                streetId=int(curStreet),
+                streetName=streetName,
+                postCode=postCode,
+                parish=parish,
+                town=town,
+                district=district,
+            )
+            logging.debug("added Street " + str(streetObj))
 
-        self.streets.append(streetObj)
-        streetName = None
-        parish = None
-        town = None
-        postCode = None
-        streetObj = None
-        district = None
+            self.streets.append(streetObj)
+            streetName = None
+            parish = None
+            town = None
+            postCode = None
+            streetObj = None
+            district = None
 
     def parseLineforExceptions(
         self, line: str, fields: list, curStreet: int, fieldtype: str
