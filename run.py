@@ -1,9 +1,12 @@
-import sys, os, logging, csv, json, argparse
+import os
+import logging
+import csv
+import argparse
 from dataclasses import dataclass
 
 
 @dataclass
-class street:
+class Street:
     streetId: int
     streetName: str
     parish: str = None
@@ -35,7 +38,7 @@ class streetexception:
 
 
 @dataclass
-class person:
+class Person:
     streetId: int
     streetNo: int
     streetNoSuffix: str
@@ -66,9 +69,9 @@ class fullPerson:
 
 
 class addressWriter:
-    def __init__(self, input):
-        logging.info("will read file: " + input)
-        inputfile = open(input, "r", encoding="ISO-8859-1")
+    def __init__(self, inputfile):
+        logging.info("will read file: %s ", inputfile)
+        inputfile = open(inputfile, "r", encoding="ISO-8859-1")
         self.lines = inputfile.readlines()
         self.streets = []
         self.streetExceptions = []
@@ -108,7 +111,7 @@ class addressWriter:
                     + " careof: "
                     + careOf
                 )
-                newPerson = person(
+                newPerson = Person(
                     streetId=int(streetId),
                     streetNo=int(streetNo),
                     streetNoSuffix=streetNoSuffix,
@@ -139,11 +142,11 @@ class addressWriter:
                     count += 1
                     if count > 1:
                         # If this is not the first iteration, lets store the data.
-                        # We start a new street-gathering routine every time field 0 is "00",
+                        # We start a new Street-gathering routine every time field 0 is "00",
                         # designating the start of a new object
                         # If there is something to store, we should store it now, before moving on
                         if streetName != None:
-                            streetObj = street(
+                            streetObj = Street(
                                 streetId=int(curStreet),
                                 streetName=streetName,
                                 postCode=postCode,
@@ -151,17 +154,17 @@ class addressWriter:
                                 town=town,
                                 district=district,
                             )
-                            logging.debug("added street " + str(streetObj))
+                            logging.debug("added Street " + str(streetObj))
 
                             self.streets.append(streetObj)
                             streetName = None
                             parish = None
                             town = None
-                            postcode = None
+                            postCode = None
                             streetObj = None
                             district = None
 
-                    # this starts a new street section
+                    # this starts a new Street section
                     curStreet = fields[2]
                     streetName = " ".join(line[12:63].split())
                     logging.debug(
@@ -181,7 +184,7 @@ class addressWriter:
                             fieldtype="postCode",
                         )
                     else:
-                        logging.debug("there's a street mismatch in this line, exiting")
+                        logging.debug("there's a Street mismatch in this line, exiting")
                         logging.debug(line)
                         quit()
                 case "03":
@@ -194,7 +197,7 @@ class addressWriter:
                             fieldtype="parish",
                         )
                     else:
-                        logging.debug("there's a street mismatch in this line, exiting")
+                        logging.debug("there's a Street mismatch in this line, exiting")
                         logging.debug(line)
                         quit()
                 case "04":
@@ -210,7 +213,7 @@ class addressWriter:
                             fieldtype="town",
                         )
                     else:
-                        logging.debug("there's a street mismatch in this line, exiting")
+                        logging.debug("there's a Street mismatch in this line, exiting")
                         logging.debug(line)
                         quit()
 
@@ -224,13 +227,13 @@ class addressWriter:
                             fieldtype="district",
                         )
                     else:
-                        logging.debug("there's a street mismatch in this line, exiting")
+                        logging.debug("there's a Street mismatch in this line, exiting")
                         logging.debug(line)
                         quit()
                 case "07":
-                    # we're down into persons - so lets store the street and move on, if there is something to store:
+                    # we're down into persons - so lets store the Street and move on, if there is something to store:
                     if streetName != None:
-                        streetObj = street(
+                        streetObj = Street(
                             streetId=int(curStreet),
                             streetName=streetName,
                             postCode=postCode,
@@ -238,18 +241,18 @@ class addressWriter:
                             town=town,
                             district=district,
                         )
-                        logging.debug("added street " + str(streetObj))
+                        logging.debug("added Street " + str(streetObj))
 
                         self.streets.append(streetObj)
                         streetName = None
                         parish = None
                         town = None
-                        postcode = None
+                        postCode = None
                         streetObj = None
                         district = None
 
-        # write the last street to file, even though we're out of the loop
-        streetObj = street(
+        # write the last Street to file, even though we're out of the loop
+        streetObj = Street(
             streetId=int(curStreet),
             streetName=streetName,
             postCode=postCode,
@@ -257,13 +260,13 @@ class addressWriter:
             town=town,
             district=district,
         )
-        logging.debug("added street " + str(streetObj))
+        logging.debug("added Street " + str(streetObj))
 
         self.streets.append(streetObj)
         streetName = None
         parish = None
         town = None
-        postcode = None
+        postCode = None
         streetObj = None
         district = None
 
@@ -347,7 +350,7 @@ class addressWriter:
             return value
 
     def writeStreetFile(self, file) -> any:
-        streetfile = open(file, "w", newline="")
+        streetfile = open(file, "w", newline="", encoding="UTF-8")
         self.streetWriter = csv.writer(streetfile, dialect="excel")
 
         if len(self.streets) == 0:
@@ -355,21 +358,21 @@ class addressWriter:
         self.streetWriter.writerow(
             ["ID", "Vejnavn", "Sogn", "Postdistrikt", "By", "Flække"]
         )
-        for street in self.streets:
+        for Street in self.streets:
             self.streetWriter.writerow(
                 [
-                    street.streetId,
-                    street.streetName,
-                    street.parish,
-                    street.postCode,
-                    street.town,
-                    street.district,
+                    Street.streetId,
+                    Street.streetName,
+                    Street.parish,
+                    Street.postCode,
+                    Street.town,
+                    Street.district,
                 ]
             )
         logging.info("wrote " + str(len(self.streets)) + " streets to file")
 
     def writeStreetExceptions(self, file) -> any:
-        exceptionfile = open(file, "w", newline="")
+        exceptionfile = open(file, "w", newline="", encoding="UTF-8")
         self.exceptionWriter = csv.writer(exceptionfile, dialect="excel")
 
         if len(self.streetExceptions) == 0:
@@ -407,27 +410,27 @@ class addressWriter:
         if len(self.persons) == 0:
             self.parsePersons()
 
-        for person in self.persons:
+        for Person in self.persons:
             writePerson = {}
-            self.findStreetAndException(person=person, writePerson=writePerson)
-            logging.debug(person)
+            self.findStreetAndException(Person=Person, writePerson=writePerson)
+            logging.debug(Person)
             logging.info(writePerson)
             if len(writePerson) < 2:
-                logging.error("No street info found, exiting for person:")
+                logging.error("No Street info found, exiting for Person:")
                 logging.error(writePerson)
-                logging.error(person)
+                logging.error(Person)
                 quit()
 
             personToSave = fullPerson(
-                streetId=person.streetId,
-                lastName=person.lastName,
-                firstName=person.firstName,
-                occupation=person.occupation,
-                careOf=person.careOf,
-                streetNo=person.streetNo,
-                streetNoSuffix=person.streetNoSuffix,
-                floor=person.floor,
-                door=person.door,
+                streetId=Person.streetId,
+                lastName=Person.lastName,
+                firstName=Person.firstName,
+                occupation=Person.occupation,
+                careOf=Person.careOf,
+                streetNo=Person.streetNo,
+                streetNoSuffix=Person.streetNoSuffix,
+                floor=Person.floor,
+                door=Person.door,
                 streetName=writePerson["streetName"],
                 parish=writePerson["parish"],
                 postCode=writePerson["postCode"],
@@ -437,7 +440,7 @@ class addressWriter:
             self.fullpersons.append(personToSave)
 
     def writePersonsCsv(self, file) -> any:
-        personfile = open(file, "w", newline="")
+        personfile = open(file, "w", newline="", encoding="UTF-8")
         personWriter = csv.writer(personfile, dialect="excel")
         if len(self.fullpersons) == 0:
             self.parseFullPersons()
@@ -476,32 +479,32 @@ class addressWriter:
                 )
             logging.info("wrote " + str(len(self.fullpersons)) + " persons to file")
 
-    def findStreetAndException(self, person, writePerson):
+    def findStreetAndException(self, Person, writePerson):
         if len(self.streetExceptions) == 0:
             self.parseStreets()
-        for street in self.streets:
-            if street == person.streetId:
-                logging.debug("found street " + str(street))
-                writePerson["streetName"] = street.streetName
-                writePerson["postCode"] = street.postCode
-                writePerson["town"] = street.town
-                writePerson["parish"] = street.parish
-                writePerson["district"] = street.district
+        for Street in self.streets:
+            if Street == Person.streetId:
+                logging.debug("found Street " + str(Street))
+                writePerson["streetName"] = Street.streetName
+                writePerson["postCode"] = Street.postCode
+                writePerson["town"] = Street.town
+                writePerson["parish"] = Street.parish
+                writePerson["district"] = Street.district
 
         ## go searching through exceptions to see if we have an override
         for exception in self.streetExceptions:
             # Lets not declare exception before we've verified it
             exceptionMatch = False
-            if exception == person.streetId:
+            if exception == Person.streetId:
                 logging.info(
                     "maybe found exception? \n"
                     + str(exception)
-                    + " vs person: \n"
-                    + str(person)
+                    + " vs Person: \n"
+                    + str(Person)
                 )
                 # from here on, it gets kinda messy, to be honest.
                 # Are we looking at an even streetNo?
-                if (person.streetNo % 2) == 0:
+                if (Person.streetNo % 2) == 0:
                     evenNumber = True
                 else:
                     evenNumber = False
@@ -515,17 +518,17 @@ class addressWriter:
 
                 else:
                     logging.debug(exception)
-                    logging.debug(person)
+                    logging.debug(Person)
 
                     # we need to check house numbers and suffices
                     if (
-                        person.streetNo >= exception.exceptionFrom
-                        and person.streetNo <= exception.exceptionTo
+                        Person.streetNo >= exception.exceptionFrom
+                        and Person.streetNo <= exception.exceptionTo
                     ):
                         # is this suffix-less?
-                        if person.streetNoSuffix == "" or (
-                            person.streetNoSuffix >= exception.exceptionFromSuffix
-                            and person.streetNoSuffix <= exception.exceptionToSuffix
+                        if Person.streetNoSuffix == "" or (
+                            Person.streetNoSuffix >= exception.exceptionFromSuffix
+                            and Person.streetNoSuffix <= exception.exceptionToSuffix
                         ):
                             logging.info("exception match")
                             exceptionMatch = True
@@ -568,12 +571,12 @@ inputs.add_argument(
 outputs = parser.add_argument_group(
     "Output arguments", "Specify at least one, or you're not getting any output :-)"
 )
-outputs.add_argument("-p", "--person", help="CSV file for outputting the person data")
-outputs.add_argument("-s", "--street", help="CSV file for storing street names")
+outputs.add_argument("-p", "--Person", help="CSV file for outputting the Person data")
+outputs.add_argument("-s", "--Street", help="CSV file for storing Street names")
 outputs.add_argument(
     "-e",
     "--exceptions",
-    help="CSV file for storing street exceptions (parish, town, etc)",
+    help="CSV file for storing Street exceptions (parish, town, etc)",
 )
 
 args = parser.parse_args()
@@ -587,11 +590,11 @@ except:
         "No inFileName provided - first argument is input-file, second argument is output-file (csv)"
     )
     print("The util will append to the file without further questions")
-    exit
+    quit()
 
-if args.street:
-    print("Will write streets to file " + args.street)
-    convert.writeStreetFile(file=args.street)
+if args.Street:
+    print("Will write streets to file " + args.Street)
+    convert.writeStreetFile(file=args.Street)
     writes = True
 
 if args.exceptions:
@@ -599,9 +602,9 @@ if args.exceptions:
     convert.writeStreetExceptions(file=args.exceptions)
     writes = True
 
-if args.person:
-    print("Will write persons to file " + args.person)
-    convert.writePersonsCsv(file=args.person)
+if args.Person:
+    print("Will write persons to file " + args.Person)
+    convert.writePersonsCsv(file=args.Person)
     writes = True
 
 
